@@ -3,8 +3,8 @@
 }
 .section {
     height: 100vh;
-    border-bottom: 1px solid white;
-    padding: 6rem 2rem 3rem 2rem;
+    /* border-bottom: 1px solid white; */
+    padding: 6rem 2rem 6rem 2rem;
 }
 .circleBox {
     height: 580px;
@@ -61,6 +61,7 @@
     align-items: center;
     justify-content: space-around;
     font-family: "Montserrat";
+    height: 120vh;
 }
 #Intro h3 {
     font-size: 3.5em;
@@ -85,6 +86,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    height: 120vh;
 }
 #Clients h4 {
     text-align: center;
@@ -137,4 +139,47 @@
     text-align: center;
     line-height: 1.3em;
     font-weight: 100;
+}
+
+/* CONTACT */
+#Contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+}
+#Contact > .wrap {
+    width: 50%;
+}
+
+#Contact h6 {
+    font-size: 3.5em;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+#Contact .address {
+    margin-bottom: 2.5rem;
+}
+#Contact .address p {
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 1.3em;
+}
+
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.phone svg {
+    fill: white;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.email svg {
+    fill: white;
+    height: 25px;
+    margin-right: 10px;
 }
