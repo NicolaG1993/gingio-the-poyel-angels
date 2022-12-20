@@ -2,7 +2,7 @@
     min-height: 100vh;
 }
 .section {
-    height: 100vh;
+    min-height: 100vh;
     /* border-bottom: 1px solid white; */
     padding: 6rem 2rem 6rem 2rem;
 }
@@ -61,7 +61,7 @@
     align-items: center;
     justify-content: space-around;
     font-family: "Montserrat";
-    height: 120vh;
+    min-height: 120vh;
 }
 #Intro h3 {
     font-size: 3.5em;
@@ -86,7 +86,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 120vh;
+    min-height: 100vh;
+    /* min-height: 120vh; */
+    margin-top: 33vh;
 }
 #Clients h4 {
     text-align: center;
@@ -102,6 +104,7 @@
     width: 100%;
     max-width: 1800px;
     height: 100%;
+    min-height: 800px;
     max-height: 900px;
     align-items: center;
     justify-items: center;
@@ -122,6 +125,7 @@
     align-items: center;
     justify-content: space-around;
     font-family: "Montserrat";
+    min-height: 110vh;
 }
 #Book h5 {
     font-size: 3.5em;
@@ -175,11 +179,137 @@
 .phone svg {
     fill: white;
     height: 30px;
+    width: 35px;
     margin-right: 10px;
 }
 
 .email svg {
     fill: white;
     height: 25px;
+    width: 35px;
     margin-right: 10px;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 1810px) {
+    #Intro p {
+        font-size: 2.2em;
+    }
+}
+@media screen and (max-height: 1200px) {
+    #Book {
+        min-height: 160vh;
+    }
+}
+@media screen and (max-width: 1700px) {
+    #Home > div > h1,
+    #Home > div > h2 {
+        font-size: 5em;
+        margin-bottom: 5rem;
+    }
+    #Home > div > div > span {
+        font-size: 2.5em;
+    }
+
+    .fakeLogo {
+        width: 200px;
+        height: 140px;
+    }
+}
+@media screen and (max-height: 950px) {
+    #Home > div > h1,
+    #Home > div > h2 {
+        font-size: 5em;
+        margin-bottom: 5rem;
+    }
+    #Home > div > div > span {
+        font-size: 2.5em;
+    }
+
+    #Intro {
+        min-height: 160vh;
+    }
+    #Book {
+        min-height: 180vh;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #Home > div > h1,
+    #Home > div > h2 {
+        font-size: 3.2em;
+        margin-bottom: 3.2rem;
+    }
+    #Home > div > div > span {
+        font-size: 2em;
+    }
+    .fakeLogo {
+        width: 170px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .circleBox {
+        height: 420px;
+        width: 420px;
+    }
+    #Home > div {
+        width: 45%;
+    }
+    #Home > div > h1,
+    #Home > div > h2 {
+        font-size: 2.8em;
+        margin-bottom: 2.8rem;
+    }
+    #Home > div > div > span {
+        font-size: 1.8em;
+    }
+
+    #Intro {
+        min-height: 140vh;
+    }
+    #Intro h3 {
+        font-size: 2.4em;
+    }
+    #Intro p {
+        font-size: 1.4em;
+    }
+
+    #Clients h4 {
+        font-size: 3em;
+    }
+    .fakeLogo {
+        width: 150px;
+        height: 120px;
+    }
+
+    #Book {
+        min-height: 140vh;
+    }
+    #Book h5 {
+        font-size: 3em;
+    }
+    #Book p {
+        font-size: 3em;
+    }
+
+    #Contact {
+        margin-top: 33vh;
+    }
+    #Contact h6 {
+        font-size: 2.5em;
+    }
+    #Contact .address p {
+        font-size: 1.2em;
+    }
+    .phone svg {
+        height: 18px;
+        width: 20px;
+    }
+    .email svg {
+        height: 14px;
+        width: 20px;
+    }
 }
