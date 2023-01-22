@@ -9,6 +9,7 @@
 .circleBox {
     height: 580px;
     width: 580px;
+    margin-bottom: 180px;
     border-radius: 80%;
     border: 2px solid white;
     outline: 1px solid white;
@@ -34,7 +35,7 @@
     line-height: 0.9em;
 }
 #Home > div > h2,
-#Home > div > div > span {
+.poweredBy {
     font-weight: 100;
     font-family: "Montserrat";
 }
@@ -43,14 +44,16 @@
     align-items: center;
     opacity: 0.8;
 }
-#Home > div > div > span {
+.poweredBy {
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 3em;
     line-height: 0.7em;
     vertical-align: middle;
     transition: 0.5s ease;
 }
-#Home > div > div > span > a {
+.poweredBy > a {
     margin-left: 1.2rem;
 }
 
@@ -61,7 +64,8 @@
     align-items: center;
     justify-content: space-around;
     font-family: "Montserrat";
-    min-height: 120vh;
+    /* min-height: 120vh; */
+    padding-top: 10rem;
 }
 #Intro h3 {
     font-size: 3.5em;
@@ -112,7 +116,7 @@
 }
 
 .fakeLogo {
-    background-color: white;
+    border: 1px solid white;
     width: 250px;
     height: 150px;
 }
@@ -208,7 +212,7 @@
         font-size: 5em;
         margin-bottom: 5rem;
     }
-    #Home > div > div > span {
+    .poweredBy {
         font-size: 2.5em;
     }
 
@@ -223,15 +227,27 @@
         font-size: 5em;
         margin-bottom: 5rem;
     }
-    #Home > div > div > span {
+    .poweredBy {
         font-size: 2.5em;
     }
 
     #Intro {
-        min-height: 160vh;
+        /* min-height: 160vh; */
     }
     #Book {
         min-height: 180vh;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .section {
+        padding: 3rem 2rem 6rem 2rem;
+    }
+    #Intro {
+        padding-top: 6rem;
+    }
+    #Clients {
+        margin-top: 6rem;
     }
 }
 
@@ -241,8 +257,11 @@
         font-size: 3.2em;
         margin-bottom: 3.2rem;
     }
-    #Home > div > div > span {
-        font-size: 2em;
+    .poweredBy {
+        font-size: 1.8em;
+    }
+    .poweredBy > a {
+        margin-left: 0.8rem;
     }
     .fakeLogo {
         width: 170px;
@@ -256,19 +275,19 @@
         width: 420px;
     }
     #Home > div {
-        width: 45%;
+        width: 410px;
     }
     #Home > div > h1,
     #Home > div > h2 {
         font-size: 2.8em;
         margin-bottom: 2.8rem;
     }
-    #Home > div > div > span {
+    /* .poweredBy {
         font-size: 1.8em;
-    }
+    } */
 
     #Intro {
-        min-height: 140vh;
+        /* min-height: 140vh; */
     }
     #Intro h3 {
         font-size: 2.4em;
@@ -311,5 +330,86 @@
     .email svg {
         height: 14px;
         width: 20px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #Clients > div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        max-height: none;
+    }
+    .fakeLogo {
+        margin: 1.2rem;
+    }
+    #Contact > .wrap {
+        width: 305px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .fakeLogo {
+        margin: 1.2rem 0.2rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #Home {
+        flex-direction: row;
+    }
+    #Clients > div {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .circleBox {
+        height: 360px;
+        width: 360px;
+    }
+    #Intro h3 {
+        font-size: 2em;
+    }
+    #Book h5 {
+        font-size: 2.3em;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .poweredBy {
+        font-size: 1.2em;
+    }
+    .poweredBy > a {
+        margin-left: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .circleBox {
+        height: 300px;
+        width: 300px;
+    }
+    #Intro h3 {
+        font-size: 1.4em;
+        padding: 3rem;
+    }
+    #Book h5 {
+        font-size: 1.8em;
+    }
+
+    /* #Clients > div {
+        justify-content: space-between;
+    } */
+}
+
+@media screen and (max-width: 300px) {
+    .circleBox {
+        height: 240px;
+        width: 240px;
+    }
+    #Book h5 {
+        font-size: 1.4em;
     }
 }

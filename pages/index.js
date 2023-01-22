@@ -5,11 +5,30 @@ import styles from "../styles/Home.module.css";
 import gingioLogo from "../public/assets/gingio.png";
 import Phone from "../public/assets/phone.svg";
 import Email from "../public/assets/email.svg";
+import Slider from "../components/Slider/Slider.js";
 
 export default function Home({ scrollTop, width, height, isSmallDevice }) {
+    /* COMPONENT STATES */
     const [animationReady, setAnimationReady] = useState(false);
     const [chatButton, setChatButton] = useState(false);
+    const [logoHeight, setLogoHeight] = useState("27");
 
+    /* LOGO HEIGHT */
+    useEffect(() => width && checkLogoHeight(), [width]);
+
+    const checkLogoHeight = () => {
+        if (width < 1400) {
+            if (width < 470) {
+                setLogoHeight("21");
+            } else {
+                setLogoHeight("27");
+            }
+        } else {
+            setLogoHeight("38");
+        }
+    };
+
+    /* ANIMATIONS */
     useEffect(() => {
         const timer = setTimeout(() => {
             setAnimationReady(true);
@@ -36,6 +55,7 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
               opacity: "0",
           };
 
+    /* DOM */
     return (
         <>
             <Head>
@@ -45,13 +65,18 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
 
             <main className={styles.main}>
                 <section className={styles.section} id={styles.Home}>
+                    <Slider />
+
                     <div>
                         <h1>THE POYEL ANGELS</h1>
                         <h2>
                             THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S COMMUNITY!
                         </h2>
                         <div>
-                            <span style={renderAnimationA}>
+                            <span
+                                style={renderAnimationA}
+                                className={styles.poweredBy}
+                            >
                                 POWERED BY
                                 <a
                                     href="https://www.gingio.com"
@@ -61,8 +86,8 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                                     <Image
                                         src={gingioLogo}
                                         width="auto"
-                                        // height={width < 720 ? "15" : "38"}
-                                        height={"38"}
+                                        height={logoHeight}
+                                        // height={"38"}
                                         alt="Gingio"
                                     />
                                 </a>
@@ -91,12 +116,12 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                             NEW YORK <span className="bold">• MIAMI •</span>{" "}
                             MALTA <span className="bold">• TOKYO •</span>{" "}
                             AMSTERDAM{" "}
-                            <span className="bold">• HONG KONG •</span> ISTANBUL
-                            KIEV <span className="bold">• MOSCOW •</span> BALI{" "}
+                            <span className="bold">• HONG KONG •</span> ISTANBUL{" "}
                             <span className="bold">• PARIS •</span> ZURICH{" "}
                             <span className="bold">• ST. MORITZ •</span> TEL
                             AVIV <span className="bold">• SIDNEY •</span>{" "}
-                            SINGAPORE <span className="bold">• BEIJING</span>
+                            SINGAPORE <span className="bold">• BEIJING •</span>{" "}
+                            BALI
                         </p>
                     </div>
                 </section>
