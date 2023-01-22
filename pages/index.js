@@ -65,7 +65,7 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
 
             <main className={styles.main}>
                 <section className={styles.section} id={styles.Home}>
-                    <Slider />
+                    {/* <Slider /> */}
 
                     <div>
                         <h1>THE POYEL ANGELS</h1>

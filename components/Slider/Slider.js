@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Slider.module.css";
 
 export default function Slider() {
@@ -7,5 +8,9 @@ export default function Slider() {
      * animate images left to right and viceversa + fade
      */
 
-    return <div className={styles.slider}></div>;
+    return (
+        <div className={styles.slider}>
+            <Image src={slide1} alt="First slider picture" />
+        </div>
+    );
 }
