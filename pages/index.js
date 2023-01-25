@@ -65,33 +65,36 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
 
             <main className={styles.main}>
                 <section className={styles.section} id={styles.Home}>
-                    {/* <Slider /> */}
+                    <Slider />
 
-                    <div>
-                        <h1>THE POYEL ANGELS</h1>
-                        <h2>
-                            THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S COMMUNITY!
-                        </h2>
+                    <div className={styles.content}>
                         <div>
-                            <span
-                                style={renderAnimationA}
-                                className={styles.poweredBy}
-                            >
-                                POWERED BY
-                                <a
-                                    href="https://www.gingio.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                            <h1>THE POYEL ANGELS</h1>
+                            <h2>
+                                THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S
+                                COMMUNITY!
+                            </h2>
+                            <div>
+                                <span
+                                    style={renderAnimationA}
+                                    className={styles.poweredBy}
                                 >
-                                    <Image
-                                        src={gingioLogo}
-                                        width="auto"
-                                        height={logoHeight}
-                                        // height={"38"}
-                                        alt="Gingio"
-                                    />
-                                </a>
-                            </span>
+                                    POWERED BY
+                                    <a
+                                        href="https://www.gingio.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Image
+                                            src={gingioLogo}
+                                            width="auto"
+                                            height={logoHeight}
+                                            // height={"38"}
+                                            alt="Gingio"
+                                        />
+                                    </a>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </section>

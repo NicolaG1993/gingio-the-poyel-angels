@@ -4,4 +4,16 @@
     width: 100vw;
     top: 0;
     left: 0;
+    z-index: 1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: center;
+    background-size: cover;
+    background-attachment: scroll; /* importante per proporzioni su ios */
 }

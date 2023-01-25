@@ -21,29 +21,29 @@
 
 /* HOME */
 #Home {
+}
+#Home > .content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
-#Home > div {
+#Home > .content > div {
     width: 40%;
 }
-#Home > div > h1,
-#Home > div > h2 {
+#Home > .content > div > h1,
+#Home > .content > div > h2 {
     font-size: 6em;
     margin-bottom: 7rem;
     line-height: 0.9em;
 }
-#Home > div > h2,
+#Home > .content > div > h2,
 .poweredBy {
     font-weight: 100;
     font-family: "Montserrat";
 }
-#Home > div > div {
-    display: flex;
-    align-items: center;
-    opacity: 0.8;
-}
+
 .poweredBy {
     display: flex;
     align-items: center;
@@ -207,8 +207,8 @@
     }
 }
 @media screen and (max-width: 1700px) {
-    #Home > div > h1,
-    #Home > div > h2 {
+    #Home > .content > div > h1,
+    #Home > .content > div > h2 {
         font-size: 5em;
         margin-bottom: 5rem;
     }
@@ -222,8 +222,8 @@
     }
 }
 @media screen and (max-height: 950px) {
-    #Home > div > h1,
-    #Home > div > h2 {
+    #Home > .content > div > h1,
+    #Home > .content > div > h2 {
         font-size: 5em;
         margin-bottom: 5rem;
     }
@@ -252,8 +252,8 @@
 }
 
 @media screen and (max-width: 1400px) {
-    #Home > div > h1,
-    #Home > div > h2 {
+    #Home > .content > div > h1,
+    #Home > .content > div > h2 {
         font-size: 3.2em;
         margin-bottom: 3.2rem;
     }
@@ -274,11 +274,11 @@
         height: 420px;
         width: 420px;
     }
-    #Home > div {
+    #Home > .content > div {
         width: 410px;
     }
-    #Home > div > h1,
-    #Home > div > h2 {
+    #Home > .content > div > h1,
+    #Home > .content > div > h2 {
         font-size: 2.8em;
         margin-bottom: 2.8rem;
     }
