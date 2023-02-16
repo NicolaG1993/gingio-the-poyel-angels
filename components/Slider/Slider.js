@@ -11,30 +11,31 @@ export default function Slider() {
 
     const slides = [
         {
-            src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1674385665/samples/ecommerce/analog-classic.jpg",
+            src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1676559354/GINGIO%20-%20The%20Poyel%20Angels/IMG_6296_j95v8r.jpg",
             alt: "First slider picture",
         },
         {
-            src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1674385675/samples/ecommerce/leather-bag-gray.jpg",
+            src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1676559350/GINGIO%20-%20The%20Poyel%20Angels/Slide_1_ygp9ug.jpg",
             alt: "Second slider picture",
         },
         {
-            src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1674385676/samples/ecommerce/accessories-bag.jpg",
+            src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1676559351/GINGIO%20-%20The%20Poyel%20Angels/IMG_6298_lqjcvt.jpg",
             alt: "Third slider picture",
         },
     ];
 
     const [activeSlide, setActiveSlide] = useState(0);
-    const [content, setContent] = useState(slides[0]);
+    // const [content, setContent] = useState(slides[0]);
 
-    const autoPlay = 4;
+    const autoPlay = 6;
 
     const nextSlide = () => {
         setActiveSlide(activeSlide === slides.length - 1 ? 0 : activeSlide + 1);
-        setContent(slides[activeSlide]);
+        // setContent(slides[activeSlide]);
     };
 
     useEffect(() => {
+        console.log(activeSlide);
         let interval = null;
         const play = () => {
             nextSlide();
@@ -65,17 +66,52 @@ export default function Slider() {
                     }}
                 /> */}
 
-                <div
+                {slides.map((img, i) => (
+                    <div
+                        key={img.alt}
+                        className={styles["slide"]}
+                        style={{
+                            width: `100%`,
+                            height: `100%`,
+                            // position: "relative",
+                            opacity: Number(activeSlide) === Number(i) ? 1 : 0,
+                            transition: "opacity 0.5s ease-in-out",
+                        }}
+                    >
+                        <Image
+                            src={img.src}
+                            alt={"Slide"}
+                            fill
+                            style={{
+                                objectFit: "cover",
+                            }}
+                        />
+                    </div>
+                ))}
+                {/* <div
                     className={styles["slide"]}
                     style={{
-                        backgroundImage: `url(${content.src})`,
-                        WebkitTransition: "background-image 0.5s ease-in-out",
-                        transition: "background-image 0.5s ease-in-out",
+                        // backgroundImage: `url(${content.src})`,
+                        // WebkitTransition: "background-image 0.5s ease-in-out",
+                        // transition: "background-image 0.5s ease-in-out",
                         width: `100%`,
                         height: `100%`,
+                        position: "relative",
                     }}
-                ></div>
+                >
+                    <Image
+                        src={content.src}
+                        alt={"Slide"}
+                        fill
+                        style={{
+                            objectFit: "cover",
+                            // objectPosition: "left",
+                        }}
+                    />
+                </div> */}
             </div>
         </>
     );
 }
+
+// 🧨 bisogna usare <Image/> per ottimizzare le prestazioni delle immagini in loading 🧨

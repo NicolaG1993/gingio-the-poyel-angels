@@ -1,6 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Jost);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700);
 
+@font-face {
+    font-family: "Aquire Bold";
+    src: url("/assets/fonts/AquireBold.otf");
+    /* font-weight: 400; */
+    /* font-style: normal; */
+}
+
 * {
     box-sizing: border-box;
 }

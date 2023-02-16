@@ -21,6 +21,9 @@
 
 /* HOME */
 #Home {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 #Home > .content {
     display: flex;
@@ -30,18 +33,31 @@
     z-index: 2;
 }
 #Home > .content > div {
-    width: 40%;
+    /* width: 66%; */
+    display: flex;
+    flex-direction: column;
+}
+#Home > .content > div > h1 {
+    font-family: "Aquire Bold", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
 #Home > .content > div > h1,
 #Home > .content > div > h2 {
     font-size: 6em;
     margin-bottom: 7rem;
     line-height: 0.9em;
+    transition: 0.5s ease;
+}
+#Home > .content > div > h2 {
+    transition-delay: 0.7s;
 }
 #Home > .content > div > h2,
 .poweredBy {
     font-weight: 100;
     font-family: "Montserrat";
+    max-width: 900px;
 }
 
 .poweredBy {
@@ -52,6 +68,7 @@
     line-height: 0.7em;
     vertical-align: middle;
     transition: 0.5s ease;
+    transition-delay: 1s;
 }
 .poweredBy > a {
     margin-left: 1.2rem;
@@ -212,6 +229,10 @@
         font-size: 5em;
         margin-bottom: 5rem;
     }
+    #Home > .content > div > h2,
+    .poweredBy {
+        max-width: 800px;
+    }
     .poweredBy {
         font-size: 2.5em;
     }
@@ -257,6 +278,10 @@
         font-size: 3.2em;
         margin-bottom: 3.2rem;
     }
+    #Home > .content > div > h2,
+    .poweredBy {
+        max-width: 480px;
+    }
     .poweredBy {
         font-size: 1.8em;
     }
@@ -275,13 +300,19 @@
         width: 420px;
     }
     #Home > .content > div {
-        width: 410px;
+        width: 540px;
+    }
+    #Home > .content > div > h1 {
+        /* font-size: 2.8em; */
+    }
+    #Home > .content > div > h2 {
+        font-size: 2.8em;
     }
     #Home > .content > div > h1,
     #Home > .content > div > h2 {
-        font-size: 2.8em;
         margin-bottom: 2.8rem;
     }
+
     /* .poweredBy {
         font-size: 1.8em;
     } */
@@ -358,6 +389,18 @@
 @media screen and (max-width: 580px) {
     #Home {
         flex-direction: row;
+    }
+    #Home > .content > div {
+        width: 380px;
+    }
+    #Home > .content > div > h1 {
+        font-size: 3.5em;
+        white-space: normal;
+    }
+
+    #Home > .content > div > h2 {
+        font-size: 2.2em;
+        margin-bottom: 2.2rem;
     }
     #Clients > div {
         justify-content: space-evenly;

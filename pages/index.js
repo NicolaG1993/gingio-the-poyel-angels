@@ -54,6 +54,15 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
               transform: "translateY(-50px)",
               opacity: "0",
           };
+    const renderAnimationC = animationReady
+        ? {
+              transform: "translateY(0)",
+              opacity: "1",
+          }
+        : {
+              transform: "translateY(-50px)",
+              opacity: "0",
+          };
 
     /* DOM */
     return (
@@ -69,14 +78,14 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
 
                     <div className={styles.content}>
                         <div>
-                            <h1>THE POYEL ANGELS</h1>
-                            <h2>
+                            <h1 style={renderAnimationA}>THE POYEL ANGELS</h1>
+                            <h2 style={renderAnimationB}>
                                 THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S
                                 COMMUNITY!
                             </h2>
                             <div>
                                 <span
-                                    style={renderAnimationA}
+                                    style={renderAnimationC}
                                     className={styles.poweredBy}
                                 >
                                     POWERED BY
