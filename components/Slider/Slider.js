@@ -11,16 +11,16 @@ export default function Slider() {
 
     const slides = [
         {
+            src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1676559351/GINGIO%20-%20The%20Poyel%20Angels/IMG_6298_lqjcvt.jpg",
+            alt: "Third slider picture",
+        },
+        {
             src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1676559354/GINGIO%20-%20The%20Poyel%20Angels/IMG_6296_j95v8r.jpg",
             alt: "First slider picture",
         },
         {
             src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1676559350/GINGIO%20-%20The%20Poyel%20Angels/Slide_1_ygp9ug.jpg",
             alt: "Second slider picture",
-        },
-        {
-            src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1676559351/GINGIO%20-%20The%20Poyel%20Angels/IMG_6298_lqjcvt.jpg",
-            alt: "Third slider picture",
         },
     ];
 

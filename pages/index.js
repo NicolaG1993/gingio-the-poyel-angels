@@ -11,22 +11,21 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
     /* COMPONENT STATES */
     const [animationReady, setAnimationReady] = useState(false);
     const [chatButton, setChatButton] = useState(false);
-    const [logoHeight, setLogoHeight] = useState("27");
+    const [logoHeight, setLogoHeight] = useState("24");
 
     /* LOGO HEIGHT */
-    useEffect(() => width && checkLogoHeight(), [width]);
-
-    const checkLogoHeight = () => {
-        if (width < 1400) {
-            if (width < 470) {
-                setLogoHeight("21");
-            } else {
-                setLogoHeight("27");
-            }
-        } else {
-            setLogoHeight("38");
-        }
-    };
+    // useEffect(() => width && checkLogoHeight(), [width]);
+    // const checkLogoHeight = () => {
+    //     if (width < 1400) {
+    //         if (width < 470) {
+    //             setLogoHeight("21");
+    //         } else {
+    //             setLogoHeight("27");
+    //         }
+    //     } else {
+    //         setLogoHeight("38");
+    //     }
+    // };
 
     /* ANIMATIONS */
     useEffect(() => {
@@ -110,14 +109,63 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
 
                 <section className={styles.section} id={styles.Intro}>
                     <div className={styles.circleBox}>
-                        <h3>
-                            <span className="bold">FIRST-CLASS</span> IMAGE
-                            PRODUCTION PROMOTIONAL{" "}
-                            <span className="bold">#SOLUTIONS</span>
-                        </h3>
+                        <div>
+                            <h3>
+                                <span className="bold">FIRST-CLASS</span> IMAGE
+                                PRODUCTION PROMOTIONAL{" "}
+                                <span className="bold">#SOLUTIONS</span>
+                            </h3>
+                        </div>
                     </div>
 
                     <div>
+                        <div>
+                            <p>
+                                <span className="bold">LOS ANGELES •</span>{" "}
+                                LUGANO <span className="bold">• MILAN •</span>{" "}
+                                IBIZA{" "}
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <span className="bold">DUBAI •</span> LONDON{" "}
+                                <span className="bold">• CAPE TOWN •</span>{" "}
+                                MONACO
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <span className="bold">SAINT TROPEZ •</span>{" "}
+                                BARCELONA{" "}
+                                <span className="bold">• BERLIN •</span> NEW
+                                YORK
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <span className="bold">MIAMI •</span> MALTA{" "}
+                                <span className="bold">• TOKYO •</span>{" "}
+                                AMSTERDAM{" "}
+                                <span className="bold">• HONG KONG</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                ISTANBUL <span className="bold">• PARIS •</span>{" "}
+                                ZURICH{" "}
+                                <span className="bold">• ST. MORITZ •</span> TEL
+                                AVIV
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <span className="bold">SIDNEY •</span> SINGAPORE{" "}
+                                <span className="bold">• BEIJING •</span> BALI
+                            </p>
+                        </div>
+                        <p></p>
+                    </div>
+                    {/* <div>
                         <p>
                             <span className="bold">LOS ANGELES •</span> LUGANO{" "}
                             <span className="bold">• MILAN •</span> IBIZA{" "}
@@ -135,7 +183,7 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                             SINGAPORE <span className="bold">• BEIJING •</span>{" "}
                             BALI
                         </p>
-                    </div>
+                    </div> */}
                 </section>
 
                 <section className={styles.section} id={styles.Clients}>
@@ -171,7 +219,9 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <h5>BOOK APPOINTMENT</h5>
+                        <div>
+                            <h5>BOOK APPOINTMENT</h5>
+                        </div>
                     </a>
 
                     <div>

@@ -10,20 +10,28 @@
     height: 580px;
     width: 580px;
     margin-bottom: 180px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.circleBox > div {
     border-radius: 80%;
-    border: 2px solid white;
-    outline: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: 2px solid white;
+    outline: 1px solid white;
+    height: 100%;
+    width: 100%;
 }
 
 /* HOME */
 #Home {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    align-items: flex-end;
 }
 #Home > .content {
     display: flex;
@@ -38,6 +46,7 @@
     flex-direction: column;
 }
 #Home > .content > div > h1 {
+    font-size: 6em;
     font-family: "Aquire Bold", sans-serif;
     white-space: nowrap;
     overflow: hidden;
@@ -45,12 +54,12 @@
 }
 #Home > .content > div > h1,
 #Home > .content > div > h2 {
-    font-size: 6em;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
     line-height: 0.9em;
     transition: 0.5s ease;
 }
 #Home > .content > div > h2 {
+    font-size: 4em;
     transition-delay: 0.7s;
 }
 #Home > .content > div > h2,
@@ -64,7 +73,7 @@
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 1.2em;
     line-height: 0.7em;
     vertical-align: middle;
     transition: 0.5s ease;
@@ -172,23 +181,34 @@
     align-items: center;
     justify-content: center;
     font-family: "Montserrat";
+    padding-top: 20rem;
 }
 #Contact > .wrap {
-    width: 50%;
+    /* width: 50%; */
 }
 
 #Contact h6 {
     font-size: 3.5em;
     font-weight: 400;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
 }
 #Contact .address {
     margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+#Contact .address > p:nth-child(1) {
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 2em;
 }
 #Contact .address p {
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: 200;
-    line-height: 1.3em;
+    line-height: 1.5em;
+}
+#Contact a:hover {
+    text-decoration: underline;
 }
 
 .phone,
@@ -199,15 +219,15 @@
 
 .phone svg {
     fill: white;
-    height: 30px;
-    width: 35px;
+    height: 20px;
+    width: 25px;
     margin-right: 10px;
 }
 
 .email svg {
     fill: white;
-    height: 25px;
-    width: 35px;
+    height: 20px;
+    width: 25px;
     margin-right: 10px;
 }
 
@@ -220,22 +240,22 @@
 }
 @media screen and (max-height: 1200px) {
     #Book {
-        min-height: 160vh;
+        min-height: 120vh;
     }
 }
 @media screen and (max-width: 1700px) {
     #Home > .content > div > h1,
     #Home > .content > div > h2 {
         font-size: 5em;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
     }
     #Home > .content > div > h2,
     .poweredBy {
         max-width: 800px;
     }
-    .poweredBy {
+    /* .poweredBy {
         font-size: 2.5em;
-    }
+    } */
 
     .fakeLogo {
         width: 200px;
@@ -246,11 +266,11 @@
     #Home > .content > div > h1,
     #Home > .content > div > h2 {
         font-size: 5em;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
     }
-    .poweredBy {
+    /* .poweredBy {
         font-size: 2.5em;
-    }
+    } */
 
     #Intro {
         /* min-height: 160vh; */
@@ -275,16 +295,16 @@
 @media screen and (max-width: 1400px) {
     #Home > .content > div > h1,
     #Home > .content > div > h2 {
-        font-size: 3.2em;
-        margin-bottom: 3.2rem;
+        font-size: 3.4em;
+        margin-bottom: 2rem;
     }
     #Home > .content > div > h2,
     .poweredBy {
         max-width: 480px;
     }
-    .poweredBy {
+    /* .poweredBy {
         font-size: 1.8em;
-    }
+    } */
     .poweredBy > a {
         margin-left: 0.8rem;
     }
@@ -300,17 +320,18 @@
         width: 420px;
     }
     #Home > .content > div {
-        width: 540px;
+        width: 580px;
     }
     #Home > .content > div > h1 {
         /* font-size: 2.8em; */
+        white-space: normal;
     }
     #Home > .content > div > h2 {
-        font-size: 2.8em;
+        font-size: 2.4em;
     }
     #Home > .content > div > h1,
     #Home > .content > div > h2 {
-        margin-bottom: 2.8rem;
+        margin-bottom: 2rem;
     }
 
     /* .poweredBy {
@@ -324,7 +345,7 @@
         font-size: 2.4em;
     }
     #Intro p {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     #Clients h4 {
@@ -402,6 +423,9 @@
         font-size: 2.2em;
         margin-bottom: 2.2rem;
     }
+    #Intro p {
+        font-size: 1em;
+    }
     #Clients > div {
         justify-content: space-evenly;
     }
@@ -415,17 +439,26 @@
     #Intro h3 {
         font-size: 2em;
     }
+    #Intro p {
+        font-size: 0.8em;
+    }
     #Book h5 {
         font-size: 2.3em;
     }
 }
 
 @media screen and (max-width: 470px) {
-    .poweredBy {
-        font-size: 1.2em;
+    #Home > .content > div {
+        width: 100%;
     }
+    /* .poweredBy {
+        font-size: 1.2em;
+    } */
     .poweredBy > a {
         margin-left: 0.7rem;
+    }
+    #Intro p {
+        font-size: 0.7em;
     }
 }
 
@@ -433,6 +466,9 @@
     .circleBox {
         height: 300px;
         width: 300px;
+    }
+    #Intro p {
+        font-size: 0.6em;
     }
     #Intro h3 {
         font-size: 1.4em;
