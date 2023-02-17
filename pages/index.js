@@ -121,13 +121,13 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
 
                 <section className={styles.section} id={styles.Intro}>
                     <div className={styles.circleBox}>
-                        <div>
+                        <span>
                             <h3>
                                 <span className="bold">FIRST-CLASS</span> IMAGE
                                 PRODUCTION PROMOTIONAL{" "}
                                 <span className="bold">#SOLUTIONS</span>
                             </h3>
-                        </div>
+                        </span>
                     </div>
 
                     <div>
@@ -210,9 +210,9 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <div>
+                        <span>
                             <h5>BOOK APPOINTMENT</h5>
-                        </div>
+                        </span>
                     </a>
 
                     <div>
