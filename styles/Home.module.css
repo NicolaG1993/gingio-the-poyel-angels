@@ -283,18 +283,6 @@
     }
 }
 
-@media screen and (max-height: 500px) {
-    .section {
-        padding: 3rem 2rem 6rem 2rem;
-    }
-    #Intro {
-        padding-top: 6rem;
-    }
-    #Clients {
-        margin-top: 6rem;
-    }
-}
-
 @media screen and (max-width: 1400px) {
     #Home > .content > div > h1,
     #Home > .content > div > h2 {
@@ -502,5 +490,29 @@
     }
     #Book h5 {
         font-size: 1.4em;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .section {
+        padding: 2rem 2rem 2rem 2rem;
+        /* padding: 3rem 2rem 6rem 2rem; */
+    }
+    #Home > .content > div > h1 {
+        font-size: 3em;
+        margin-bottom: 1.5rem;
+    }
+    #Home > .content > div > h2 {
+        font-size: 2em;
+        margin-bottom: 1.5rem;
+    }
+    .poweredBy {
+        font-size: 0.7em;
+    }
+    #Intro {
+        padding-top: 6rem;
+    }
+    #Clients {
+        margin-top: 6rem;
     }
 }
