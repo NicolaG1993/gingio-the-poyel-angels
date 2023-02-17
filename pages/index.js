@@ -224,61 +224,73 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                     <div className={styles.wrap}>
                         <h6>BE MORE!</h6>
 
-                        <div className={styles.address}>
-                            <p>SWITZERLAND</p>
-                            <p>cp 698</p>
-                            <p>6612 Ascona</p>
-                            <a
-                                href="mailto:ascona@gingio.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.email}
-                            >
-                                <Email />
-                                <p>ascona@gingio.com</p>
-                            </a>
-                            <a href="tel:+41792403054" className={styles.phone}>
-                                <Phone />
-                                <p>+41 79 240-3054</p>
-                            </a>
-                        </div>
+                        <div className={styles.contactWrap}>
+                            <div className={styles.address}>
+                                <p>SWITZERLAND</p>
+                                <div>
+                                    <p>cp 698</p>
+                                    <p>6612 Ascona</p>
+                                    <a
+                                        href="mailto:ascona@gingio.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={styles.email}
+                                    >
+                                        <Email />
+                                        <p>ascona@gingio.com</p>
+                                    </a>
+                                    <a
+                                        href="tel:+41792403054"
+                                        className={styles.phone}
+                                    >
+                                        <Phone />
+                                        <p>+41 79 240-3054</p>
+                                    </a>
+                                </div>
+                            </div>
 
-                        <div className={styles.address}>
-                            <p>UNITED STATES</p>
-                            <p>9440 Santa Monica Blvd</p>
-                            <p>Suite 301</p>
-                            <p>Beverly Hills, CA 90210</p>
-                            <a
-                                href="mailto:beverlyhills@gingio.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.email}
-                            >
-                                <Email />
-                                <p>beverlyhills@gingio.com</p>
-                            </a>
-                            <a href="tel:+13102806893" className={styles.phone}>
-                                <Phone /> <p>+1 310 280-6893</p>
-                            </a>
+                            <div className={styles.address}>
+                                <p>UNITED STATES</p>
+                                <div>
+                                    <p>9440 Santa Monica Blvd, Suite 301</p>
+                                    <p>Beverly Hills, CA 90210</p>
+                                    <a
+                                        href="mailto:beverlyhills@gingio.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={styles.email}
+                                    >
+                                        <Email />
+                                        <p>beverlyhills@gingio.com</p>
+                                    </a>
+                                    <a
+                                        href="tel:+13102806893"
+                                        className={styles.phone}
+                                    >
+                                        <Phone /> <p>+1 310 280-6893</p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-
                         <div className={styles.address}>
-                            <a
-                                href="mailto:info@thepoyelangels.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.email}
-                            >
-                                <Email />
-                                <p>info@thepoyelangels.com</p>
-                            </a>
-                            <a
-                                href="www.thepoyelangels.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <p>www.thepoyelangels.com</p>
-                            </a>
+                            <div>
+                                <a
+                                    href="mailto:info@thepoyelangels.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.email}
+                                >
+                                    <Email />
+                                    <p>info@thepoyelangels.com</p>
+                                </a>
+                                <a
+                                    href="www.thepoyelangels.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <p>www.thepoyelangels.com</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
 

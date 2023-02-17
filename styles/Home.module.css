@@ -118,7 +118,7 @@
     justify-content: space-between;
     min-height: 100vh;
     /* min-height: 120vh; */
-    margin-top: 33vh;
+    margin-top: 10rem;
 }
 #Clients h4 {
     text-align: center;
@@ -165,7 +165,18 @@
     padding-top: 20rem;
 }
 #Contact > .wrap {
-    /* width: 50%; */
+    width: 80%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.contactWrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #Contact h6 {
@@ -174,22 +185,28 @@
     margin-bottom: 5rem;
 }
 #Contact .address {
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
+    /* margin-left: 1rem; */
     display: flex;
     flex-direction: column;
+    width: 350px;
 }
 #Contact .address > p:nth-child(1) {
     font-weight: 400;
-    font-size: 1.4em;
-    line-height: 2em;
+    font-size: 1.2em;
+    line-height: 2.5em;
+    margin-left: 0;
 }
 #Contact .address p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 200;
-    line-height: 1.5em;
+    line-height: 1.8em;
 }
 #Contact a:hover {
     text-decoration: underline;
+}
+#Contact .address > div {
+    margin-left: 0.5rem;
 }
 
 .phone,
@@ -200,14 +217,14 @@
 
 .phone svg {
     fill: white;
-    height: 20px;
+    height: 15px;
     width: 25px;
     margin-right: 10px;
 }
 
 .email svg {
     fill: white;
-    height: 20px;
+    height: 14px;
     width: 25px;
     margin-right: 10px;
 }
@@ -222,6 +239,7 @@
 @media screen and (max-height: 1200px) {
     #Book {
         min-height: 120vh;
+        margin-top: 10rem;
     }
 }
 @media screen and (max-width: 1700px) {
@@ -326,30 +344,13 @@
 
     #Book {
         min-height: 140vh;
+        margin-top: 4rem;
     }
     #Book h5 {
         font-size: 3em;
     }
     #Book p {
         font-size: 3em;
-    }
-
-    #Contact {
-        margin-top: 33vh;
-    }
-    #Contact h6 {
-        font-size: 2.5em;
-    }
-    #Contact .address p {
-        font-size: 1.2em;
-    }
-    .phone svg {
-        height: 18px;
-        width: 20px;
-    }
-    .email svg {
-        height: 14px;
-        width: 20px;
     }
 }
 
@@ -359,8 +360,45 @@
     } */
 }
 
-/* @media screen and (max-width: 650px) {
-} */
+@media screen and (max-width: 720px) {
+    #Contact {
+        /* margin-top: 33vh; */
+    }
+    #Contact > .wrap {
+        align-items: flex-start;
+        width: 100%;
+        max-width: 250px;
+    }
+    .contactWrap {
+        flex-direction: column;
+    }
+    #Contact h6 {
+        font-size: 2.5em;
+        /* text-align: center;
+        width: 100%; */
+    }
+    #Contact .address {
+        width: auto;
+    }
+    #Contact .address > div {
+        margin-left: 0;
+    }
+    #Contact .address p {
+        font-size: 0.95em;
+        line-height: 2.2rem;
+        white-space: nowrap;
+        /* overflow: hidden; */
+        text-overflow: clip;
+    }
+    .phone svg {
+        height: 15px;
+        width: 20px;
+    }
+    .email svg {
+        height: 13px;
+        width: 20px;
+    }
+}
 
 @media screen and (max-width: 580px) {
     #Home {
@@ -370,13 +408,16 @@
         width: 380px;
     }
     #Home > .content > div > h1 {
-        font-size: 3.5em;
+        font-size: 2.5em;
         white-space: normal;
     }
 
     #Home > .content > div > h2 {
-        font-size: 2.2em;
+        font-size: 1.7em;
         margin-bottom: 2.2rem;
+    }
+    .poweredBy {
+        font-size: 0.9em;
     }
     #Intro p {
         font-size: 1em;
@@ -403,9 +444,19 @@
     #Home > .content > div {
         width: 100%;
     }
-    /* .poweredBy {
-        font-size: 1.2em;
-    } */
+    #Home > .content > div > h1 {
+        font-size: 2.2em;
+    }
+
+    #Home > .content > div > h2 {
+        font-size: 1.4em;
+        margin-bottom: 2.2rem;
+        font-weight: 500;
+    }
+    .poweredBy {
+        font-size: 0.8em;
+        font-weight: 500;
+    }
     .poweredBy > a {
         margin-left: 0.7rem;
     }
@@ -419,15 +470,19 @@
         height: 300px;
         width: 300px;
     }
-    #Intro p {
-        font-size: 0.6em;
-    }
+
     #Intro h3 {
         font-size: 1.4em;
         padding: 3rem;
     }
     #Book h5 {
         font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #Intro p {
+        font-size: 0.6em;
     }
 }
 
