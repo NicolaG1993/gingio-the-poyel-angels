@@ -6,12 +6,16 @@ import gingioLogo from "../public/assets/gingio.png";
 import Phone from "../public/assets/phone.svg";
 import Email from "../public/assets/email.svg";
 import Slider from "../components/Slider/Slider.js";
+import LogoSlider from "../components/LogoSlider/LogoSlider";
+import LogoGrid from "../components/LogoGrid/LogoGrid";
 
 export default function Home({ scrollTop, width, height, isSmallDevice }) {
     /* COMPONENT STATES */
     const [animationReady, setAnimationReady] = useState(false);
     const [chatButton, setChatButton] = useState(false);
     const [logoHeight, setLogoHeight] = useState("24");
+    const [logoSlider, setLogoSlider] = useState(1);
+    const [userDevice, setUserDevice] = useState("mobile");
 
     /* LOGO HEIGHT */
     // useEffect(() => width && checkLogoHeight(), [width]);
@@ -26,6 +30,14 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
     //         setLogoHeight("38");
     //     }
     // };
+    useEffect(() => width && checkUserDevice(), [width]);
+    const checkUserDevice = () => {
+        if (width <= 680) {
+            setUserDevice("mobile");
+        } else {
+            setUserDevice("screen");
+        }
+    };
 
     /* ANIMATIONS */
     useEffect(() => {
@@ -188,28 +200,7 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
 
                 <section className={styles.section} id={styles.Clients}>
                     <h4>CLIENTS AND PARTNERS</h4>
-                    <div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                        <div className={styles.fakeLogo}></div>
-                    </div>
+                    {userDevice === "screen" ? <LogoGrid /> : <LogoSlider />}
                 </section>
 
                 <section className={styles.section} id={styles.Book}>

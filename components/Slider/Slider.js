@@ -80,7 +80,7 @@ export default function Slider() {
                     >
                         <Image
                             src={img.src}
-                            alt={"Slide"}
+                            alt={img.alt}
                             fill
                             style={{
                                 objectFit: "cover",
