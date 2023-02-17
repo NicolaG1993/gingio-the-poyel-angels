@@ -10,6 +10,9 @@
     height: 580px;
     width: 580px;
     margin-bottom: 180px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     /* display: flex;
     align-items: center;
     justify-content: center; */
