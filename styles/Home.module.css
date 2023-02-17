@@ -114,6 +114,9 @@
     font-size: 2.7em;
     text-align: center;
     line-height: 1.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
 
 /* CLIENTS */
