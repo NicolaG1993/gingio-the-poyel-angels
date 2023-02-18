@@ -7,6 +7,7 @@
     padding: 6rem 8rem 6rem 8rem;
 }
 .circleBox {
+    margin-top: 5rem;
     height: 450px;
     width: 450px;
     margin-bottom: 180px;
@@ -116,7 +117,7 @@
     font-weight: normal;
 }
 #Intro > div:nth-child(1) {
-    margin-top: auto;
+    /* margin-top: auto; */
 }
 #Intro > div:nth-child(2) {
     margin-top: auto;
