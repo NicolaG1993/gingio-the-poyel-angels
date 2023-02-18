@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./LogoSlider.module.css";
 import { useState, useEffect } from "react";
+import Arrow from "../../public/assets/arrow.svg";
 
 export default function LogoSlider() {
     /*
@@ -71,23 +72,27 @@ export default function LogoSlider() {
     // };
 
     return (
-        <div className={styles.slider}>
-            {slides.map((img, i) => (
-                <div
-                    key={img.alt}
-                    className={styles.slide}
-                    id={styles[`Slide${i + 1}`]}
-                >
-                    <Image
-                        src={img.src}
-                        alt={img.alt}
-                        fill
-                        style={{
-                            objectFit: "cover",
-                        }}
-                    />
-                </div>
-            ))}
+        <div className={styles.wrap}>
+            <Arrow />
+            <div className={styles.slider}>
+                {slides.map((img, i) => (
+                    <div
+                        key={img.alt}
+                        className={styles.slide}
+                        id={styles[`Slide${i + 1}`]}
+                    >
+                        <Image
+                            src={img.src}
+                            alt={img.alt}
+                            fill
+                            style={{
+                                objectFit: "cover",
+                            }}
+                        />
+                    </div>
+                ))}
+            </div>
+            <Arrow />
         </div>
     );
 }

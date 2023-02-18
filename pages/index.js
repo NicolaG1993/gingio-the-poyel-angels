@@ -300,6 +300,11 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
 
                     <div className={styles.picture}></div>
                 </section>
+
+                <p className={styles.copyrights}>
+                    © Copyright {new Date().getFullYear()}
+                    {" | "}All Rights Reserved.
+                </p>
             </main>
         </>
     );

@@ -1,3 +1,16 @@
+.wrap {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.wrap svg {
+    height: 15px;
+    width: 15px;
+    fill: white;
+}
+.wrap > svg:nth-child(3) {
+    transform: rotate(180deg);
+}
 .slider {
     width: 300px;
     height: 300px;
@@ -5,6 +18,10 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+    margin: 0 2rem;
+}
+.slider::-webkit-scrollbar {
+    display: none;
 }
 .slide {
     width: 300px;
@@ -12,4 +29,14 @@
     height: 100%;
     scroll-snap-align: start;
     position: relative;
+}
+
+@media screen and (max-width: 470px) {
+    .slider {
+        width: 250px;
+        height: 250px;
+    }
+    .slide {
+        width: 250px;
+    }
 }
