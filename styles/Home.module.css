@@ -4,11 +4,11 @@
 .section {
     min-height: 100vh;
     /* border-bottom: 1px solid white; */
-    padding: 6rem 2rem 6rem 2rem;
+    padding: 6rem 8rem 6rem 8rem;
 }
 .circleBox {
-    height: 580px;
-    width: 580px;
+    height: 450px;
+    width: 450px;
     margin-bottom: 180px;
     border-radius: 50%;
     -moz-border-radius: 50%;
@@ -37,44 +37,55 @@
     display: flex;
     /* justify-content: flex-end; */
     /* align-items: center; */
-    align-items: flex-end;
+    align-items: flex-start;
+    align-items: stretch;
+    padding: 3rem 2rem 2rem 2rem;
 }
 #Home > .content {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    /* flex-direction: row-reverse; */
+    /* align-items: center; */
     position: relative;
     z-index: 2;
+    flex-grow: 1;
+    /* align-items: stretch; */
 }
-#Home > .content > div {
+#Home .headingsWrap {
     /* width: 66%; */
     display: flex;
     flex-direction: column;
+    /* flex-grow: 1; */
+    position: relative;
 }
-#Home > .content > div > h1 {
+#Home .headingsWrap > h1 {
     font-size: 6em;
     font-family: "Aquire Bold", sans-serif;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
 }
-#Home > .content > div > h1,
-#Home > .content > div > h2 {
+#Home .headingsWrap > h1,
+#Home .headingsWrap > h2 {
     margin-bottom: 3rem;
     line-height: 0.9em;
     transition: 0.5s ease;
 }
-#Home > .content > div > h2 {
-    font-size: 4em;
+#Home .headingsWrap > h2 {
+    font-size: 3em;
     transition-delay: 0.7s;
 }
-#Home > .content > div > h2,
+#Home .headingsWrap > h2,
 .poweredBy {
     font-weight: 100;
     font-family: "Montserrat";
     max-width: 900px;
 }
 
+#Home .poweredByWrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .poweredBy {
     display: flex;
     align-items: center;
@@ -86,7 +97,7 @@
     transition-delay: 1s;
 }
 .poweredBy > a {
-    margin-left: 1.2rem;
+    margin-left: 0.8rem;
 }
 
 /* INTRO */
@@ -100,8 +111,8 @@
     padding-top: 10rem;
 }
 #Intro h3 {
-    font-size: 3.5em;
-    padding: 1rem;
+    font-size: 2.4em;
+    padding: 2rem;
     font-weight: normal;
 }
 #Intro > div:nth-child(1) {
@@ -110,9 +121,28 @@
 #Intro > div:nth-child(2) {
     margin-top: auto;
 }
+#Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+    word-spacing: 0.45rem;
+}
+#Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
+    word-spacing: 1.66rem;
+}
+#Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
+    word-spacing: 1.3rem;
+}
+#Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
+    word-spacing: 2.15rem;
+}
+#Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
+    word-spacing: 0.54rem;
+}
+/* #Intro .justifiedRow {
+    text-align: justify;
+} */
 #Intro p {
     font-size: 2.7em;
-    text-align: center;
+    width: 100%;
+    text-align: justify;
     line-height: 1.3em;
     white-space: nowrap;
     overflow: hidden;
@@ -145,7 +175,8 @@
     align-items: center;
     justify-content: space-around;
     font-family: "Montserrat";
-    min-height: 110vh;
+    /* min-height: 110vh; */
+    min-height: 30vh;
 }
 #Book h5 {
     font-size: 3.5em;
@@ -163,6 +194,7 @@
     text-align: center;
     line-height: 1.3em;
     font-weight: 100;
+    max-width: 1000px;
 }
 
 /* CONTACT */
@@ -244,20 +276,36 @@
     #Intro p {
         font-size: 2.2em;
     }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+        word-spacing: 0.36rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
+        word-spacing: 1.37rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
+        word-spacing: 1.07rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
+        word-spacing: 1.78rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
+        word-spacing: 0.47rem;
+    }
 }
 @media screen and (max-height: 1200px) {
     #Book {
-        min-height: 120vh;
+        /* min-height: 120vh; */
         margin-top: 10rem;
     }
 }
 @media screen and (max-width: 1700px) {
-    #Home > .content > div > h1,
-    #Home > .content > div > h2 {
-        font-size: 5em;
+    #Home .headingsWrap > h1,
+    #Home .headingsWrap > h2 {
+        font-size: 3em;
         margin-bottom: 4rem;
+        max-width: 700px;
     }
-    #Home > .content > div > h2,
+    #Home .headingsWrap > h2,
     .poweredBy {
         max-width: 800px;
     }
@@ -266,8 +314,8 @@
     } */
 }
 @media screen and (max-height: 950px) {
-    #Home > .content > div > h1,
-    #Home > .content > div > h2 {
+    #Home .headingsWrap > h1,
+    #Home .headingsWrap > h2 {
         font-size: 5em;
         margin-bottom: 4rem;
     }
@@ -279,45 +327,47 @@
         /* min-height: 160vh; */
     }
     #Book {
-        min-height: 180vh;
+        /* min-height: 180vh; */
     }
 }
 
 @media screen and (max-width: 1400px) {
-    #Home > .content > div > h1,
-    #Home > .content > div > h2 {
+    #Home .headingsWrap > h1 {
         font-size: 3.4em;
         margin-bottom: 2rem;
     }
-    #Home > .content > div > h2,
-    .poweredBy {
-        max-width: 480px;
+    #Home .headingsWrap > h2 {
+        font-size: 2.5em;
+        margin-bottom: 2rem;
+    }
+    #Home .headingsWrap > h2 {
+        max-width: 420px;
     }
     /* .poweredBy {
         font-size: 1.8em;
     } */
     .poweredBy > a {
-        margin-left: 0.8rem;
+        margin-left: 0.7rem;
     }
 }
 
 @media screen and (max-width: 1250px) {
     .circleBox {
-        height: 420px;
-        width: 420px;
+        height: 360px;
+        width: 360px;
     }
-    #Home > .content > div {
+    #Home > .headingsWrap {
         width: 580px;
     }
-    #Home > .content > div > h1 {
+    #Home > .headingsWrap > h1 {
         /* font-size: 2.8em; */
         white-space: normal;
     }
-    #Home > .content > div > h2 {
+    #Home > .headingsWrap > h2 {
         font-size: 2.4em;
     }
-    #Home > .content > div > h1,
-    #Home > .content > div > h2 {
+    #Home > .headingsWrap > h1,
+    #Home > .headingsWrap > h2 {
         margin-bottom: 2rem;
     }
 
@@ -329,10 +379,25 @@
         /* min-height: 140vh; */
     }
     #Intro h3 {
-        font-size: 2.4em;
+        font-size: 2em;
     }
     #Intro p {
         font-size: 1.3em;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+        word-spacing: 0.21rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
+        word-spacing: 0.8rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
+        word-spacing: 0.64rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
+        word-spacing: 1.05rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
+        word-spacing: 0.27rem;
     }
 
     #Clients h4 {
@@ -340,7 +405,7 @@
     }
 
     #Book {
-        min-height: 140vh;
+        /* min-height: 140vh; */
         margin-top: 4rem;
     }
     #Book h5 {
@@ -355,9 +420,18 @@
     /* #Contact > .wrap {
         width: 305px;
     } */
+    .section {
+        padding: 6rem 6rem 6rem 6rem;
+    }
 }
 
 @media screen and (max-width: 720px) {
+    .section {
+        padding: 6rem 2rem 6rem 2rem;
+    }
+    #Book {
+        padding: 6rem 4rem 6rem 4rem;
+    }
     #Contact {
         /* margin-top: 33vh; */
     }
@@ -401,17 +475,17 @@
     #Home {
         flex-direction: row;
     }
-    #Home > .content > div {
+    #Home .headingsWrap {
         width: 380px;
     }
-    #Home > .content > div > h1 {
+    #Home .headingsWrap > h1 {
         font-size: 2.5em;
         white-space: normal;
     }
-
-    #Home > .content > div > h2 {
+    #Home .headingsWrap > h2 {
         font-size: 1.7em;
         margin-bottom: 2.2rem;
+        max-width: 220px;
     }
     .poweredBy {
         font-size: 0.9em;
@@ -419,18 +493,48 @@
     #Intro p {
         font-size: 1em;
     }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+        word-spacing: 0.16rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
+        word-spacing: 0.62rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
+        word-spacing: 0.5rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
+        word-spacing: 0.83rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
+        word-spacing: 0.22rem;
+    }
 }
 
 @media screen and (max-width: 510px) {
     .circleBox {
-        height: 360px;
-        width: 360px;
+        height: 280px;
+        width: 280px;
     }
     #Intro h3 {
-        font-size: 2em;
+        font-size: 1.6em;
     }
     #Intro p {
         font-size: 0.8em;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+        word-spacing: 0.125rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
+        word-spacing: 0.51rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
+        word-spacing: 0.41rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
+        word-spacing: 0.67rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
+        word-spacing: 0.18rem;
     }
     #Book h5 {
         font-size: 2.3em;
@@ -438,14 +542,14 @@
 }
 
 @media screen and (max-width: 470px) {
-    #Home > .content > div {
+    #Home .headingsWrap {
         width: 100%;
     }
-    #Home > .content > div > h1 {
+    #Home .headingsWrap > h1 {
         font-size: 2.2em;
     }
 
-    #Home > .content > div > h2 {
+    #Home .headingsWrap > h2 {
         font-size: 1.4em;
         margin-bottom: 2.2rem;
         font-weight: 500;
@@ -455,21 +559,36 @@
         font-weight: 500;
     }
     .poweredBy > a {
-        margin-left: 0.7rem;
+        margin-left: 0.6rem;
     }
     #Intro p {
         font-size: 0.7em;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+        word-spacing: 0.11rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
+        word-spacing: 0.44rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
+        word-spacing: 0.36rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
+        word-spacing: 0.59rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
+        word-spacing: 0.16rem;
     }
 }
 
 @media screen and (max-width: 400px) {
     .circleBox {
-        height: 300px;
-        width: 300px;
+        height: 220px;
+        width: 220px;
     }
 
     #Intro h3 {
-        font-size: 1.4em;
+        font-size: 1.2em;
         padding: 3rem;
     }
     #Book h5 {
@@ -480,6 +599,21 @@
 @media screen and (max-width: 370px) {
     #Intro p {
         font-size: 0.6em;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+        word-spacing: 0.095rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
+        word-spacing: 0.37rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
+        word-spacing: 0.3rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
+        word-spacing: 0.505rem;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
+        word-spacing: 0.14rem;
     }
 }
 
@@ -498,11 +632,11 @@
         padding: 2rem 2rem 2rem 2rem;
         /* padding: 3rem 2rem 6rem 2rem; */
     }
-    #Home > .content > div > h1 {
+    #Home .headingsWrap > h1 {
         font-size: 3em;
         margin-bottom: 1.5rem;
     }
-    #Home > .content > div > h2 {
+    #Home .headingsWrap > h2 {
         font-size: 2em;
         margin-bottom: 1.5rem;
     }

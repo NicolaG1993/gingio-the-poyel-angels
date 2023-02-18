@@ -13,24 +13,28 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
     /* COMPONENT STATES */
     const [animationReady, setAnimationReady] = useState(false);
     const [chatButton, setChatButton] = useState(false);
-    const [logoHeight, setLogoHeight] = useState("24");
+    const [logoHeight, setLogoHeight] = useState("22");
     const [logoSlider, setLogoSlider] = useState(1);
     const [userDevice, setUserDevice] = useState("mobile");
 
     /* LOGO HEIGHT */
-    // useEffect(() => width && checkLogoHeight(), [width]);
-    // const checkLogoHeight = () => {
-    //     if (width < 1400) {
-    //         if (width < 470) {
-    //             setLogoHeight("21");
-    //         } else {
-    //             setLogoHeight("27");
-    //         }
-    //     } else {
-    //         setLogoHeight("38");
-    //     }
-    // };
-    useEffect(() => width && checkUserDevice(), [width]);
+    useEffect(() => {
+        if (width) {
+            checkLogoHeight();
+            checkUserDevice();
+        }
+    }, [width]);
+    const checkLogoHeight = () => {
+        if (width < 1400) {
+            if (width < 470) {
+                setLogoHeight("15");
+            } else {
+                setLogoHeight("18");
+            }
+        } else {
+            setLogoHeight("24");
+        }
+    };
     const checkUserDevice = () => {
         if (width <= 680) {
             setUserDevice("mobile");
@@ -88,33 +92,33 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                     <Slider />
 
                     <div className={styles.content}>
-                        <div>
+                        <div className={styles.headingsWrap}>
                             <h1 style={renderAnimationA}>THE POYEL ANGELS</h1>
                             <h2 style={renderAnimationB}>
                                 THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S
                                 COMMUNITY!
                             </h2>
-                            <div>
-                                <span
-                                    style={renderAnimationC}
-                                    className={styles.poweredBy}
+                        </div>
+                        <div className={styles.poweredByWrap}>
+                            <span
+                                style={renderAnimationC}
+                                className={styles.poweredBy}
+                            >
+                                POWERED BY
+                                <a
+                                    href="https://www.gingio.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                    POWERED BY
-                                    <a
-                                        href="https://www.gingio.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <Image
-                                            src={gingioLogo}
-                                            width="auto"
-                                            height={logoHeight}
-                                            // height={"38"}
-                                            alt="Gingio"
-                                        />
-                                    </a>
-                                </span>
-                            </div>
+                                    <Image
+                                        src={gingioLogo}
+                                        width="auto"
+                                        height={logoHeight}
+                                        // height={"38"}
+                                        alt="Gingio"
+                                    />
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </section>
@@ -130,52 +134,52 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                         </span>
                     </div>
 
-                    <div>
-                        <div>
+                    <div className={styles.justifiedRowsWrap}>
+                        <div className={styles.justifiedRow}>
                             <p>
                                 <span className="bold">LOS ANGELES •</span>{" "}
                                 LUGANO <span className="bold">• MILAN •</span>{" "}
-                                IBIZA{" "}
+                                IBIZA <span className="bold">• DUBAI</span>
                             </p>
                         </div>
-                        <div>
+                        <div className={styles.justifiedRow}>
                             <p>
-                                <span className="bold">DUBAI •</span> LONDON{" "}
+                                LONDON{" "}
                                 <span className="bold">• CAPE TOWN •</span>{" "}
                                 MONACO
+                                <span className="bold"> • SAINT TROPEZ</span>
                             </p>
                         </div>
-                        <div>
+                        <div className={styles.justifiedRow}>
                             <p>
-                                <span className="bold">SAINT TROPEZ •</span>{" "}
+                                {" "}
                                 BARCELONA{" "}
                                 <span className="bold">• BERLIN •</span> NEW
-                                YORK
+                                YORK<span className="bold"> • MIAMI</span>
                             </p>
                         </div>
-                        <div>
+                        <div className={styles.justifiedRow}>
                             <p>
-                                <span className="bold">MIAMI •</span> MALTA{" "}
-                                <span className="bold">• TOKYO •</span>{" "}
+                                MALTA <span className="bold">• TOKYO •</span>{" "}
                                 AMSTERDAM{" "}
                                 <span className="bold">• HONG KONG</span>
                             </p>
                         </div>
-                        <div>
+                        <div className={styles.justifiedRow}>
                             <p>
                                 ISTANBUL <span className="bold">• PARIS •</span>{" "}
                                 ZURICH{" "}
-                                <span className="bold">• ST. MORITZ •</span> TEL
-                                AVIV
+                                <span className="bold">• ST. MORITZ</span>
                             </p>
                         </div>
-                        <div>
+                        <div className={styles.justifiedRow}>
                             <p>
-                                <span className="bold">SIDNEY •</span> SINGAPORE{" "}
+                                TEL AVIV{" "}
+                                <span className="bold"> • SIDNEY •</span>{" "}
+                                SINGAPORE{" "}
                                 <span className="bold">• BEIJING •</span> BALI
                             </p>
                         </div>
-                        <p></p>
                     </div>
                     {/* <div>
                         <p>
@@ -204,7 +208,7 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                 </section>
 
                 <section className={styles.section} id={styles.Book}>
-                    <a
+                    {/* <a
                         className={styles.circleBox}
                         href="mailto:info@thepoyelangels.com"
                         target="_blank"
@@ -213,7 +217,7 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                         <span>
                             <h5>BOOK APPOINTMENT</h5>
                         </span>
-                    </a>
+                    </a> */}
 
                     <div>
                         <p>WE ARE HERE TO DISCUSS HOW WE CAN ASSIST YOU</p>
