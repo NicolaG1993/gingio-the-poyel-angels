@@ -147,7 +147,7 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                                 LONDON{" "}
                                 <span className="bold">• CAPE TOWN •</span>{" "}
                                 MONACO
-                                <span className="bold"> • SAINT TROPEZ</span>
+                                <span className="bold"> • SAINT-TROPEZ</span>
                             </p>
                         </div>
                         <div className={styles.justifiedRow}>
