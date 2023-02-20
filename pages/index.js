@@ -27,12 +27,12 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
     const checkLogoHeight = () => {
         if (width < 1400) {
             if (width < 470) {
-                setLogoHeight("15");
+                setLogoHeight("14");
             } else {
-                setLogoHeight("18");
+                setLogoHeight("15");
             }
         } else {
-            setLogoHeight("24");
+            setLogoHeight("16");
         }
     };
     const checkUserDevice = () => {
