@@ -12,12 +12,28 @@ export default function LogoSlider() {
 
     const slides = [
         {
+            src: "/assets/clients/Accor Hotel - White.png",
+            alt: "Accor Hotel",
+        },
+        {
+            src: "/assets/clients/DefJam - White.png",
+            alt: "DefJam",
+        },
+        {
             src: "/assets/clients/DreamWorks - White.png",
             alt: "Dream Works",
         },
         {
             src: "/assets/clients/Epic - White.png",
             alt: "Epic",
+        },
+        {
+            src: "/assets/clients/Estrella - White.png",
+            alt: "Estrella",
+        },
+        {
+            src: "/assets/clients/Fentimans - White.png",
+            alt: "Fentimans",
         },
         {
             src: "/assets/clients/Hard Rock - White.png",
@@ -32,6 +48,10 @@ export default function LogoSlider() {
             alt: "Interscope",
         },
         {
+            src: "/assets/clients/Milan - White.png",
+            alt: "Milan",
+        },
+        {
             src: "/assets/clients/Sae - White.png",
             alt: "Sae",
         },
@@ -40,8 +60,20 @@ export default function LogoSlider() {
             alt: "Sony",
         },
         {
+            src: "/assets/clients/Taittinger - White.png",
+            alt: "Taittinger",
+        },
+        {
+            src: "/assets/clients/Titos - White.png",
+            alt: "Titos",
+        },
+        {
             src: "/assets/clients/The Palace - White.png",
             alt: "The Palace",
+        },
+        {
+            src: "/assets/clients/Tramp London - White.png",
+            alt: "Tramp London",
         },
         {
             src: "/assets/clients/Versace - White.png",

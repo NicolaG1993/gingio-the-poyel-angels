@@ -94,10 +94,12 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                     <div className={styles.content}>
                         <div className={styles.headingsWrap}>
                             <h1 style={renderAnimationA}>THE POYEL ANGELS</h1>
-                            <h2 style={renderAnimationB}>
-                                THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S
-                                COMMUNITY!
-                            </h2>
+                            <div>
+                                <h2 style={renderAnimationB}>
+                                    THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S
+                                    COMMUNITY!
+                                </h2>
+                            </div>
                         </div>
                         <div className={styles.poweredByWrap}>
                             <span

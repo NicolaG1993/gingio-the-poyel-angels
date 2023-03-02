@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     width: 100%;
     max-width: 1000px;
     height: 100%;
@@ -12,14 +12,14 @@
     margin-bottom: auto;
 }
 .icon {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     position: relative;
 }
 @media screen and (max-width: 990px) {
     .grid {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         min-height: 500px;
         margin-top: 4rem;
     }

@@ -7,10 +7,12 @@
     padding: 6rem 8rem 6rem 8rem;
 }
 .circleBox {
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
+    margin-top: 8rem;
     height: 450px;
     width: 450px;
-    margin-bottom: 180px;
+    /* margin-bottom: 180px; */
+    margin-bottom: 6rem;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -58,24 +60,29 @@
     /* flex-grow: 1; */
     position: relative;
 }
-#Home .headingsWrap > h1 {
+#Home .headingsWrap h1 {
     font-size: 2em;
+    margin-bottom: 2rem;
     font-family: "Aquire Bold", sans-serif;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
 }
-#Home .headingsWrap > h1,
-#Home .headingsWrap > h2 {
-    margin-bottom: 2rem;
+#Home .headingsWrap h1,
+#Home .headingsWrap h2 {
     line-height: 0.9em;
     transition: 0.5s ease;
 }
-#Home .headingsWrap > h2 {
+#Home .headingsWrap h2 {
     font-size: 1.8em;
     transition-delay: 0.7s;
 }
-#Home .headingsWrap > h2,
+#Home .headingsWrap > div:nth-child(2) {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+#Home .headingsWrap h2,
 .poweredBy {
     font-weight: 100;
     font-family: "Montserrat";
@@ -109,7 +116,7 @@
     justify-content: space-around;
     font-family: "Montserrat";
     /* min-height: 120vh; */
-    padding-top: 10rem;
+    padding-top: 0;
 }
 #Intro h3 {
     font-size: 2.4em;
@@ -158,7 +165,7 @@
     justify-content: space-between;
     min-height: 100vh;
     /* min-height: 120vh; */
-    margin-top: 15rem;
+    margin-top: 5rem;
 }
 #Clients h4 {
     text-align: center;
@@ -178,7 +185,9 @@
     font-family: "Montserrat";
     /* min-height: 110vh; */
     min-height: 30vh;
-    margin-top: 15rem;
+    /* margin-top: 0rem; */
+    margin-top: 5rem;
+    padding-bottom: 1rem;
 }
 #Book h5 {
     font-size: 3.5em;
@@ -205,11 +214,12 @@
     align-items: center;
     justify-content: center;
     font-family: "Montserrat";
-    padding-top: 20rem;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 #Contact > .wrap {
-    width: 80%;
-    max-width: 850px;
+    width: 100%;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,7 +251,7 @@
     margin-left: 0;
 }
 #Contact .address p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 200;
     line-height: 1.8em;
 }
@@ -249,7 +259,7 @@
     text-decoration: underline;
 }
 #Contact .address > div {
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
 }
 
 .phone,
@@ -305,7 +315,7 @@
 @media screen and (max-height: 1200px) {
     #Book {
         /* min-height: 120vh; */
-        margin-top: 15rem;
+        /* margin-top: 15rem; */
     }
 }
 @media screen and (max-width: 1700px) {
@@ -418,7 +428,7 @@
 
     #Book {
         /* min-height: 140vh; */
-        margin-top: 4rem;
+        /* margin-top: 4rem; */
     }
     #Book h5 {
         font-size: 3em;
@@ -530,7 +540,13 @@
     .circleBox {
         height: 280px;
         width: 280px;
-        margin-bottom: 10rem;
+        /* margin-bottom: 10rem; */
+    }
+    #Intro {
+        justify-content: center;
+    }
+    #Intro > div:nth-child(2) {
+        margin-top: 0;
     }
     #Intro h3 {
         font-size: 1.6em;
