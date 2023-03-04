@@ -278,10 +278,9 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                                     rel="noopener noreferrer"
                                     className={styles.email}
                                 >
-                                    <p>
-                                        <Email />
-                                    </p>
-                                    {/* <p>info@thepoyelangels.com</p> */}
+                                    <Email />
+
+                                    <p>info@thepoyelangels.com</p>
                                 </a>
                                 <a
                                     href="www.thepoyelangels.com"
