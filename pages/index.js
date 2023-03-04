@@ -135,7 +135,9 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                             </h3>
                         </span>
                     </div>
+                </section>
 
+                <section className={styles.section} id={styles.Intro}>
                     <div className={styles.justifiedRowsWrap}>
                         <div className={styles.justifiedRow}>
                             <p>
