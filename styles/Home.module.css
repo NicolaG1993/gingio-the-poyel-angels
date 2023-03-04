@@ -8,11 +8,11 @@
 }
 .circleBox {
     /* margin-top: 10rem; */
-    margin-top: 4rem;
-    height: 360px;
-    width: 360px;
+    margin-top: 2rem;
+    height: 320px;
+    width: 320px;
     /* margin-bottom: 180px; */
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -368,6 +368,20 @@
     }
     #Book {
         /* min-height: 180vh; */
+    }
+}
+@media screen and (max-height: 720px) {
+    .circleBox {
+        height: 290px;
+        width: 290px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #Intro h3 {
+        font-size: 1.5em;
+    }
+    #Clients h4 {
+        margin-bottom: 3rem;
     }
 }
 

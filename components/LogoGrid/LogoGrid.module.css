@@ -17,6 +17,13 @@
     position: relative;
     margin: 0.5rem;
 }
+@media screen and (max-height: 720px) {
+    .icon {
+        width: 70px;
+        height: 70px;
+        margin: 0;
+    }
+}
 @media screen and (max-width: 990px) {
     .grid {
         grid-template-columns: repeat(4, 1fr);
