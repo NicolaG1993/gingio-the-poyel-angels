@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./Slider.module.css";
 import { useState, useEffect } from "react";
 
-export default function Slider() {
+export default function Slider({ renderAnimationB }) {
     /*
      * import and load all images
      * only after start render with fade in
@@ -10,6 +10,10 @@ export default function Slider() {
      */
 
     const slides = [
+        {
+            src: "",
+            alt: "",
+        },
         {
             src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1676559351/GINGIO%20-%20The%20Poyel%20Angels/IMG_6298_lqjcvt.jpg",
             alt: "Third slider picture",
@@ -66,28 +70,50 @@ export default function Slider() {
                     }}
                 /> */}
 
-                {slides.map((img, i) => (
-                    <div
-                        key={img.alt}
-                        className={styles["slide"]}
-                        style={{
-                            width: `100%`,
-                            height: `100%`,
-                            // position: "relative",
-                            opacity: Number(activeSlide) === Number(i) ? 1 : 0,
-                            transition: "opacity 0.5s ease-in-out",
-                        }}
-                    >
-                        <Image
-                            src={img.src}
-                            alt={img.alt}
-                            fill
+                {slides.map((img, i) =>
+                    i > 0 ? (
+                        <div
+                            key={img.alt}
+                            className={styles["slide"]}
                             style={{
-                                objectFit: "cover",
+                                width: `100%`,
+                                height: `100%`,
+                                // position: "relative",
+                                opacity:
+                                    Number(activeSlide) === Number(i) ? 1 : 0,
+                                transition: "opacity 0.5s ease-in-out",
                             }}
-                        />
-                    </div>
-                ))}
+                        >
+                            <Image
+                                src={img.src}
+                                alt={img.alt}
+                                fill
+                                style={{
+                                    objectFit: "cover",
+                                }}
+                            />
+                        </div>
+                    ) : (
+                        <div
+                            key={img.alt}
+                            className={`${styles["slide"]} ${styles["fake-slide"]}`}
+                            style={{
+                                width: `100%`,
+                                height: `100%`,
+                                // position: "relative",
+                                opacity:
+                                    Number(activeSlide) === Number(i) ? 1 : 0,
+                                transition: "opacity 0.5s ease-in-out",
+                                background: "transparent",
+                            }}
+                        >
+                            <h2 style={renderAnimationB}>
+                                THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S
+                                COMMUNITY!
+                            </h2>
+                        </div>
+                    )
+                )}
                 {/* <div
                     className={styles["slide"]}
                     style={{

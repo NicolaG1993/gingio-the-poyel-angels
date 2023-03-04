@@ -18,3 +18,19 @@
     background-size: cover;
     background-attachment: scroll; /* importante per proporzioni su ios */
 }
+
+.fake-slide {
+    padding: 3rem 2rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.fake-slide h2 {
+    line-height: 1.2em;
+    font-size: 1.8em;
+    font-weight: 100;
+    font-family: "Montserrat";
+    max-width: 300px;
+    transition: 0.5s ease;
+    transition-delay: 0.7s;
+}

@@ -276,11 +276,12 @@
     /* margin-left: 0.5rem; */
 }
 #Contact #FinalAddress svg {
-    margin: 0;
+    /* margin: 0; */
 }
 
 .phone,
-.email {
+.email,
+.website {
     display: flex;
     align-items: center;
 }
@@ -299,6 +300,13 @@
     width: 20px;
     margin-bottom: 1px;
     margin-right: 10px;
+}
+.website svg {
+    fill: white;
+    height: 15px;
+    width: 20px;
+    margin-bottom: 1px;
+    margin-right: 12px;
 }
 
 .copyrights {

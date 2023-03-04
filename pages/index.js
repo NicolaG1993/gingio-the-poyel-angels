@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import gingioLogo from "../public/assets/gingio.png";
 import Phone from "../public/assets/phone.svg";
 import Email from "../public/assets/email.svg";
+import Website from "../public/assets/website.svg";
 import Slider from "../components/Slider/Slider.js";
 import LogoSlider from "../components/LogoSlider/LogoSlider";
 import LogoGrid from "../components/LogoGrid/LogoGrid";
@@ -89,16 +90,16 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
 
             <main className={styles.main}>
                 <section className={styles.section} id={styles.Home}>
-                    <Slider />
+                    <Slider renderAnimationB={renderAnimationB} />
 
                     <div className={styles.content}>
                         <div className={styles.headingsWrap}>
                             <h1 style={renderAnimationA}>THE POYEL ANGELS</h1>
                             <div>
-                                <h2 style={renderAnimationB}>
+                                {/* <h2 style={renderAnimationB}>
                                     THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S
                                     COMMUNITY!
-                                </h2>
+                                </h2> */}
                             </div>
                         </div>
                         <div className={styles.poweredByWrap}>
@@ -286,7 +287,9 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                                     href="www.thepoyelangels.com"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    className={styles.website}
                                 >
+                                    <Website />
                                     <p>www.thepoyelangels.com</p>
                                 </a>
                             </div>

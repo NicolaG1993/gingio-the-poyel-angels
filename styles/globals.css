@@ -45,7 +45,7 @@ p {
     bottom: 10px;
     /* left: 50%; */
     /* width: 50%; */
-    max-width: 650px;
+    max-width: 400px;
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@ p {
     left: 0;
     right: 0;
 
-    font-size: 0.9em;
+    font-size: 0.8em;
     transition: 0.5s ease;
     background: white;
     color: black;
@@ -65,7 +65,7 @@ p {
 .cookieWrap span {
     cursor: pointer;
     margin-left: 1rem;
-    width: 130px;
+    width: 120px;
     /* height: 40px; */
     background: white;
     color: black;
@@ -75,7 +75,7 @@ p {
     align-items: center;
     justify-content: center;
     padding: 0.2rem 0.2rem;
-    font-size: 0.9em;
+    font-size: 0.8em;
     transition: 0.2s ease;
     border: 2px solid black;
 }
