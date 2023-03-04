@@ -8,11 +8,11 @@
 }
 .circleBox {
     /* margin-top: 10rem; */
-    margin-top: 8rem;
-    height: 450px;
-    width: 450px;
+    margin-top: 4rem;
+    height: 360px;
+    width: 360px;
     /* margin-bottom: 180px; */
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -116,15 +116,15 @@
     justify-content: space-around;
     font-family: "Montserrat";
     /* min-height: 120vh; */
-    padding-top: 0;
+    height: 100vh;
+    padding: 4rem 4rem;
 }
-#Intro h3 {
+/* #Intro h3 {
     font-size: 2.4em;
     padding: 2rem;
     font-weight: normal;
 }
 #Intro > div:nth-child(1) {
-    /* margin-top: auto; */
 }
 #Intro > div:nth-child(2) {
     margin-top: auto;
@@ -144,9 +144,6 @@
 #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
     word-spacing: 0.54rem;
 }
-/* #Intro .justifiedRow {
-    text-align: justify;
-} */
 #Intro p {
     font-size: 2.7em;
     width: 100%;
@@ -155,6 +152,33 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
+}
+*/
+/* #Intro .justifiedRow {
+    text-align: justify;
+} */
+
+#Intro h3 {
+    font-size: 2em;
+    max-width: 80%;
+}
+#Intro p {
+    font-size: 1.3em;
+}
+#Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+    word-spacing: 0.21rem;
+}
+#Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
+    word-spacing: 0.8rem;
+}
+#Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
+    word-spacing: 0.64rem;
+}
+#Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
+    word-spacing: 1.05rem;
+}
+#Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
+    word-spacing: 0.27rem;
 }
 
 /* CLIENTS */
@@ -168,7 +192,7 @@
     height: 100vh;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    padding: 4rem 8rem 4rem 8rem;
+    padding: 2rem 8rem 4rem 8rem;
 }
 #Clients h4 {
     text-align: center;
@@ -282,7 +306,11 @@
 /* RESPONSIVENESS */
 
 @media screen and (max-width: 1810px) {
-    #Intro p {
+    .circleBox {
+        height: 360px;
+        width: 360px;
+    }
+    /* #Intro p {
         font-size: 2.2em;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
@@ -299,7 +327,7 @@
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
         word-spacing: 0.47rem;
-    }
+    } */
 }
 @media screen and (max-height: 1200px) {
     #Book {
@@ -311,7 +339,7 @@
     #Home .headingsWrap > h1 {
         font-size: 2em;
         margin-bottom: 2rem;
-        max-width: 350px;
+        /* max-width: 350px; */
     }
     #Home .headingsWrap > h2 {
         font-size: 1.7em;
@@ -328,7 +356,7 @@
 @media screen and (max-height: 950px) {
     #Home .headingsWrap > h1,
     #Home .headingsWrap > h2 {
-        font-size: 5em;
+        font-size: 2.5em;
         margin-bottom: 4rem;
     }
     /* .poweredBy {
@@ -389,9 +417,9 @@
     #Intro {
         /* min-height: 140vh; */
     }
-    #Intro h3 {
+    /* #Intro h3 {
         font-size: 2em;
-    }
+    } */
     #Intro p {
         font-size: 1.3em;
     }
