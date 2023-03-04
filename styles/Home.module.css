@@ -1,5 +1,6 @@
 .main {
     min-height: 100vh;
+    overflow: hidden;
 }
 .section {
     min-height: 100vh;
@@ -191,12 +192,12 @@
     /* min-height: 120vh; */
     height: 100vh;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     padding: 2rem 8rem 4rem 8rem;
 }
 #Clients h4 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-family: "Montserrat";
     font-weight: 100;
     margin-bottom: 4rem;
@@ -208,7 +209,7 @@
     align-items: center;
     justify-content: center;
     font-family: "Montserrat";
-    padding-top: 0;
+    padding-top: 4rem;
     padding-bottom: 0;
     min-height: 0;
     height: 96vh;
@@ -227,20 +228,20 @@
     max-width: 660px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 #Contact .headline {
-    font-size: 3.2em;
+    font-size: 2em;
     text-align: center;
     line-height: 1.3em;
     font-weight: 100;
     max-width: 800px;
 }
 #Contact h6 {
-    font-size: 3.5em;
+    font-size: 2em;
     font-weight: 400;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
     text-align: center;
 }
@@ -248,7 +249,7 @@
     /* margin-left: 1rem; */
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 250px;
 }
 #Contact > .wrap > .address:last-child * {
     text-align: center;
@@ -256,12 +257,12 @@
 }
 #Contact .address > p:nth-child(1) {
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 2.5em;
     margin-left: 0;
 }
 #Contact .address p {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 200;
     line-height: 1.8em;
 }
@@ -298,9 +299,11 @@
     width: 100%;
     text-align: center;
     /* padding: 1rem 3rem; */
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 10px;
+    font-weight: 200;
     height: 4vh;
+    margin-top: 2rem;
+    font-family: "Montserrat";
 }
 
 /* RESPONSIVENESS */
@@ -381,7 +384,7 @@
         font-size: 1.5em;
     }
     #Clients h4 {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -406,8 +409,9 @@
 
 @media screen and (max-width: 1250px) {
     .circleBox {
-        height: 360px;
-        width: 360px;
+        /* height: 360px;
+        width: 360px; */
+        margin-bottom: 1rem;
     }
     #Home > .headingsWrap {
         width: 580px;
@@ -454,7 +458,7 @@
     }
 
     #Clients h4 {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 
