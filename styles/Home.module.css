@@ -63,6 +63,7 @@
 }
 #Home .headingsWrap h1 {
     font-size: 2em;
+    line-height: 0.9em;
     margin-bottom: 2rem;
     font-family: "Aquire Bold", sans-serif;
     white-space: nowrap;
@@ -71,10 +72,10 @@
 }
 #Home .headingsWrap h1,
 #Home .headingsWrap h2 {
-    line-height: 0.9em;
     transition: 0.5s ease;
 }
 #Home .headingsWrap h2 {
+    line-height: 1.2em;
     font-size: 1.8em;
     transition-delay: 0.7s;
 }
@@ -162,6 +163,7 @@
 #Intro h3 {
     font-size: 2em;
     max-width: 80%;
+    font-weight: 300;
 }
 #Intro p {
     font-size: 1.3em;
@@ -197,7 +199,7 @@
 }
 #Clients h4 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: "Montserrat";
     font-weight: 100;
     margin-bottom: 4rem;
@@ -241,8 +243,8 @@
 #Contact h6 {
     font-size: 2em;
     font-weight: 400;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 #Contact .address {
@@ -250,6 +252,7 @@
     display: flex;
     flex-direction: column;
     width: 250px;
+    margin-bottom: 2rem;
 }
 #Contact > .wrap > .address:last-child * {
     text-align: center;
@@ -271,6 +274,9 @@
 }
 #Contact .address > div {
     /* margin-left: 0.5rem; */
+}
+#Contact #FinalAddress svg {
+    margin: 0;
 }
 
 .phone,
@@ -458,7 +464,7 @@
     }
 
     #Clients h4 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
 
