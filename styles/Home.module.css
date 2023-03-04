@@ -163,49 +163,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 100vh;
+    min-height: 0;
     /* min-height: 120vh; */
+    height: 100vh;
     margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 4rem 8rem 4rem 8rem;
 }
 #Clients h4 {
     text-align: center;
-    font-size: 4.5em;
+    font-size: 3em;
     font-family: "Montserrat";
     font-weight: 100;
-    margin-bottom: 5rem;
-}
-
-/* BOOK */
-
-#Book {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-family: "Montserrat";
-    /* min-height: 110vh; */
-    min-height: 30vh;
-    /* margin-top: 0rem; */
-    margin-top: 5rem;
-    padding-bottom: 1rem;
-}
-#Book h5 {
-    font-size: 3.5em;
-    padding: 1rem;
-    font-weight: 500;
-}
-#Book > a:nth-child(1) {
-    margin-top: auto;
-}
-#Book > div:nth-child(2) {
-    margin-top: auto;
-}
-#Book p {
-    font-size: 4em;
-    text-align: center;
-    line-height: 1.3em;
-    font-weight: 100;
-    max-width: 1000px;
+    margin-bottom: 4rem;
 }
 
 /* CONTACT */
@@ -216,33 +186,49 @@
     font-family: "Montserrat";
     padding-top: 0;
     padding-bottom: 0;
+    min-height: 0;
+    height: 96vh;
 }
 #Contact > .wrap {
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .contactWrap {
     width: 100%;
+    max-width: 660px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5rem;
 }
 
+#Contact .headline {
+    font-size: 3.2em;
+    text-align: center;
+    line-height: 1.3em;
+    font-weight: 100;
+    max-width: 800px;
+}
 #Contact h6 {
     font-size: 3.5em;
     font-weight: 400;
+    margin-top: 3rem;
     margin-bottom: 5rem;
+    text-align: center;
 }
 #Contact .address {
-    margin-bottom: 5rem;
     /* margin-left: 1rem; */
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 300px;
+}
+#Contact > .wrap > .address:last-child * {
+    text-align: center;
+    justify-content: center;
 }
 #Contact .address > p:nth-child(1) {
     font-weight: 400;
@@ -251,7 +237,7 @@
     margin-left: 0;
 }
 #Contact .address p {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 200;
     line-height: 1.8em;
 }
@@ -270,24 +256,27 @@
 
 .phone svg {
     fill: white;
-    height: 15px;
-    width: 25px;
+    height: 13px;
+    width: 20px;
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .email svg {
     fill: white;
-    height: 14px;
-    width: 25px;
+    height: 10px;
+    width: 20px;
+    margin-bottom: 1px;
     margin-right: 10px;
 }
 
 .copyrights {
     width: 100%;
     text-align: center;
-    padding: 1rem 3rem;
+    /* padding: 1rem 3rem; */
     font-size: 12px;
     font-weight: 400;
+    height: 4vh;
 }
 
 /* RESPONSIVENESS */
@@ -425,17 +414,6 @@
     #Clients h4 {
         font-size: 3em;
     }
-
-    #Book {
-        /* min-height: 140vh; */
-        /* margin-top: 4rem; */
-    }
-    #Book h5 {
-        font-size: 3em;
-    }
-    #Book p {
-        font-size: 3em;
-    }
 }
 
 @media screen and (max-width: 990px) {
@@ -444,6 +422,12 @@
     } */
     .section {
         padding: 6rem 6rem 6rem 6rem;
+    }
+    #Clients {
+        height: auto;
+    }
+    #Clients h4 {
+        margin-bottom: 0rem;
     }
 }
 
@@ -454,12 +438,15 @@
     #Clients {
         min-height: auto;
         margin-bottom: 10rem;
+        padding: 4rem;
     }
     #Book {
         padding: 6rem 4rem 6rem 4rem;
     }
     #Contact {
         /* margin-top: 33vh; */
+        height: auto;
+        padding-bottom: 3rem;
     }
     #Contact > .wrap {
         align-items: flex-start;

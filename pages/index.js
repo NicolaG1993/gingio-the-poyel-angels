@@ -209,25 +209,12 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                     {userDevice === "screen" ? <LogoGrid /> : <LogoSlider />}
                 </section>
 
-                <section className={styles.section} id={styles.Book}>
-                    {/* <a
-                        className={styles.circleBox}
-                        href="mailto:info@thepoyelangels.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span>
-                            <h5>BOOK APPOINTMENT</h5>
-                        </span>
-                    </a> */}
-
-                    <div>
-                        <p>WE ARE HERE TO DISCUSS HOW WE CAN ASSIST YOU</p>
-                    </div>
-                </section>
-
                 <section className={styles.section} id={styles.Contact}>
                     <div className={styles.wrap}>
+                        <p className={styles.headline}>
+                            WE ARE HERE TO DISCUSS HOW WE CAN ASSIST YOU
+                        </p>
+
                         <h6>BE MORE!</h6>
 
                         <div className={styles.contactWrap}>
@@ -299,8 +286,6 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                             </div>
                         </div>
                     </div>
-
-                    <div className={styles.picture}></div>
                 </section>
 
                 <p className={styles.copyrights}>
