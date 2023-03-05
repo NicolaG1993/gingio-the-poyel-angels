@@ -23,6 +23,7 @@
     padding: 3rem 2rem 2rem 2rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .fake-slide h2 {

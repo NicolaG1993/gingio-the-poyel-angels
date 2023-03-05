@@ -61,10 +61,12 @@
     /* flex-grow: 1; */
     position: relative;
 }
+#Home .headingsWrap a {
+}
 #Home .headingsWrap h1 {
     font-size: 2em;
     line-height: 0.9em;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     font-family: "Aquire Bold", sans-serif;
     white-space: nowrap;
     overflow: hidden;
@@ -353,9 +355,9 @@
     }
 }
 @media screen and (max-width: 1700px) {
-    #Home .headingsWrap > h1 {
+    #Home .headingsWrap h1 {
         font-size: 2em;
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
         /* max-width: 350px; */
     }
     #Home .headingsWrap > h2 {
@@ -371,10 +373,10 @@
     } */
 }
 @media screen and (max-height: 950px) {
-    #Home .headingsWrap > h1,
+    #Home .headingsWrap h1,
     #Home .headingsWrap > h2 {
         font-size: 2.5em;
-        margin-bottom: 4rem;
+        /* margin-bottom: 4rem; */
     }
     /* .poweredBy {
         font-size: 2.5em;
@@ -403,9 +405,9 @@
 }
 
 @media screen and (max-width: 1400px) {
-    #Home .headingsWrap > h1 {
+    #Home .headingsWrap h1 {
         font-size: 2em;
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
     }
     #Home .headingsWrap > h2 {
         font-size: 1.6em;
@@ -439,7 +441,7 @@
     }
     #Home > .headingsWrap > h1,
     #Home > .headingsWrap > h2 {
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
     }
 
     /* .poweredBy {
@@ -453,22 +455,22 @@
         font-size: 2em;
     } */
     #Intro p {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
-        word-spacing: 0.21rem;
+        word-spacing: 0.2rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
-        word-spacing: 0.8rem;
+        word-spacing: 0.74rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
-        word-spacing: 0.64rem;
+        word-spacing: 0.59rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
-        word-spacing: 1.05rem;
+        word-spacing: 1rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
-        word-spacing: 0.27rem;
+        word-spacing: 0.26rem;
     }
 
     #Clients h4 {
@@ -544,25 +546,7 @@
     }
 }
 
-@media screen and (max-width: 580px) {
-    #Home {
-        flex-direction: row;
-    }
-    #Home .headingsWrap {
-        width: 380px;
-    }
-    #Home .headingsWrap > h1 {
-        font-size: 2.5em;
-        white-space: normal;
-    }
-    #Home .headingsWrap > h2 {
-        font-size: 1.7em;
-        margin-bottom: 2.2rem;
-        max-width: 220px;
-    }
-    .poweredBy {
-        font-size: 0.9em;
-    }
+@media screen and (max-width: 680px) {
     #Intro p {
         font-size: 1em;
     }
@@ -582,21 +566,24 @@
         word-spacing: 0.22rem;
     }
 }
-
-@media screen and (max-width: 510px) {
-    .circleBox {
-        height: 280px;
-        width: 280px;
-        /* margin-bottom: 10rem; */
+@media screen and (max-width: 580px) {
+    #Home {
+        flex-direction: row;
     }
-    #Intro {
-        justify-content: center;
+    #Home .headingsWrap {
+        width: 380px;
     }
-    #Intro > div:nth-child(2) {
-        margin-top: 0;
+    #Home .headingsWrap h1 {
+        font-size: 2.5em;
+        white-space: normal;
     }
-    #Intro h3 {
-        font-size: 1.6em;
+    #Home .headingsWrap > h2 {
+        font-size: 1.7em;
+        margin-bottom: 2.2rem;
+        max-width: 220px;
+    }
+    .poweredBy {
+        font-size: 0.9em;
     }
     #Intro p {
         font-size: 0.8em;
@@ -616,6 +603,24 @@
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
         word-spacing: 0.18rem;
     }
+}
+
+@media screen and (max-width: 510px) {
+    .circleBox {
+        height: 280px;
+        width: 280px;
+        /* margin-bottom: 10rem; */
+    }
+    #Intro {
+        justify-content: center;
+    }
+    #Intro > div:nth-child(2) {
+        margin-top: 0;
+    }
+    #Intro h3 {
+        font-size: 1.6em;
+    }
+
     #Book h5 {
         font-size: 2.3em;
     }
@@ -625,8 +630,8 @@
     #Home .headingsWrap {
         width: 100%;
     }
-    #Home .headingsWrap > h1 {
-        font-size: 2.2em;
+    #Home .headingsWrap h1 {
+        font-size: 1.5em;
     }
 
     #Home .headingsWrap > h2 {
@@ -641,23 +646,26 @@
     /* .poweredBy > a {
         margin-left: 0.6rem;
     } */
+    #Intro {
+        padding: 2rem;
+    }
     #Intro p {
         font-size: 0.7em;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
-        word-spacing: 0.11rem;
+        word-spacing: 0.12rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
-        word-spacing: 0.44rem;
+        word-spacing: 0.43rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
-        word-spacing: 0.36rem;
+        word-spacing: 0.34rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
-        word-spacing: 0.59rem;
+        word-spacing: 0.58rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
-        word-spacing: 0.16rem;
+        word-spacing: 0.15rem;
     }
 }
 
@@ -669,7 +677,7 @@
 
     #Intro h3 {
         font-size: 1.2em;
-        padding: 3rem;
+        /* padding: 3rem; */
     }
     #Book h5 {
         font-size: 1.8em;
@@ -707,26 +715,37 @@
     }
 }
 
+@media screen and (max-height: 600px) {
+    #Contact {
+        height: auto;
+    }
+}
 @media screen and (max-height: 500px) {
     .section {
         padding: 2rem 2rem 2rem 2rem;
         /* padding: 3rem 2rem 6rem 2rem; */
     }
-    #Home .headingsWrap > h1 {
-        font-size: 3em;
-        margin-bottom: 1.5rem;
-    }
-    #Home .headingsWrap > h2 {
-        font-size: 2em;
-        margin-bottom: 1.5rem;
-    }
+
     .poweredBy {
         font-size: 0.7em;
     }
     #Intro {
-        padding-top: 6rem;
+        padding: 2rem;
+    }
+    .circleBox {
+        height: 240px;
+        width: 240px;
     }
     #Clients {
-        margin-top: 6rem;
+        /* margin-bottom: 3rem; */
+    }
+}
+@media screen and (max-height: 340px) {
+    .circleBox {
+        height: 200px;
+        width: 200px;
+    }
+    #Intro h3 {
+        font-size: 1em;
     }
 }
