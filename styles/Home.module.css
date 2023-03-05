@@ -232,6 +232,7 @@
     max-width: 660px;
     display: flex;
     justify-content: space-between;
+    margin-top: 4rem;
     margin-bottom: 4rem;
 }
 
@@ -401,6 +402,9 @@
     }
     #Clients h4 {
         margin-bottom: 2rem;
+    }
+    .contactWrap {
+        margin-top: 0;
     }
 }
 
