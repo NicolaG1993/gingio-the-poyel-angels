@@ -135,9 +135,8 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                     <div className={styles.circleBox}>
                         <span>
                             <h3>
-                                <span className="bold">FIRST-CLASS</span> IMAGE
-                                PRODUCTION PROMOTIONAL{" "}
-                                <span className="bold">#SOLUTIONS</span>
+                                <strong>FIRST-CLASS</strong> IMAGE PRODUCTION
+                                PROMOTIONAL <strong>#SOLUTIONS</strong>
                             </h3>
                         </span>
                     </div>
@@ -146,49 +145,30 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                 <section className={styles.section} id={styles.Intro}>
                     <div className={styles.justifiedRowsWrap}>
                         <div className={styles.justifiedRow}>
-                            <p>
-                                <span className="bold">LOS ANGELES •</span>{" "}
-                                LUGANO <span className="bold">• MILAN •</span>{" "}
-                                IBIZA <span className="bold">• DUBAI</span>
-                            </p>
+                            <strong>LOS ANGELES •</strong> LUGANO{" "}
+                            <strong>• MILAN •</strong> IBIZA{" "}
+                            <strong>• DUBAI</strong>
                         </div>
                         <div className={styles.justifiedRow}>
-                            <p>
-                                LONDON{" "}
-                                <span className="bold">• CAPE TOWN •</span>{" "}
-                                MONACO
-                                <span className="bold"> • SAINT-TROPEZ</span>
-                            </p>
+                            LONDON <strong>• CAPE TOWN •</strong> MONACO
+                            <strong> • SAINT-TROPEZ</strong>
                         </div>
                         <div className={styles.justifiedRow}>
-                            <p>
-                                {" "}
-                                BARCELONA{" "}
-                                <span className="bold">• BERLIN •</span> NEW
-                                YORK<span className="bold"> • MIAMI</span>
-                            </p>
+                            {" "}
+                            BARCELONA <strong>• BERLIN •</strong> NEW YORK
+                            <strong> • MIAMI</strong>
                         </div>
                         <div className={styles.justifiedRow}>
-                            <p>
-                                MALTA <span className="bold">• TOKYO •</span>{" "}
-                                AMSTERDAM{" "}
-                                <span className="bold">• HONG KONG</span>
-                            </p>
+                            MALTA <strong>• TOKYO •</strong> AMSTERDAM{" "}
+                            <strong>• HONG KONG</strong>
                         </div>
                         <div className={styles.justifiedRow}>
-                            <p>
-                                ISTANBUL <span className="bold">• PARIS •</span>{" "}
-                                ZURICH{" "}
-                                <span className="bold">• ST. MORITZ</span>
-                            </p>
+                            ISTANBUL <strong>• PARIS •</strong> ZURICH{" "}
+                            <strong>• ST. MORITZ</strong>
                         </div>
                         <div className={styles.justifiedRow}>
-                            <p>
-                                TEL AVIV{" "}
-                                <span className="bold"> • SIDNEY •</span>{" "}
-                                SINGAPORE{" "}
-                                <span className="bold">• BEIJING •</span> BALI
-                            </p>
+                            TEL AVIV <strong> • SIDNEY •</strong> SINGAPORE{" "}
+                            <strong>• BEIJING •</strong> BALI
                         </div>
                     </div>
                     {/* <div>

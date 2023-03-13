@@ -1,11 +1,11 @@
 .wrap {
-    margin-top: 1rem;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
 }
 .wrap svg {
     height: 15px;
-    width: 15px;
+    /* width: 15px; */
     fill: white;
 }
 .wrap > svg:nth-child(3) {
@@ -18,7 +18,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 .slider::-webkit-scrollbar {
     display: none;

@@ -123,54 +123,30 @@
     height: 100vh;
     padding: 4rem 4rem;
 }
-/* #Intro h3 {
-    font-size: 2.4em;
-    padding: 2rem;
-    font-weight: normal;
-}
-#Intro > div:nth-child(1) {
-}
-#Intro > div:nth-child(2) {
-    margin-top: auto;
-}
-#Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
-    word-spacing: 0.45rem;
-}
-#Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
-    word-spacing: 1.66rem;
-}
-#Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
-    word-spacing: 1.3rem;
-}
-#Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
-    word-spacing: 2.15rem;
-}
-#Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
-    word-spacing: 0.54rem;
-}
-#Intro p {
-    font-size: 2.7em;
+
+#Intro .justifiedRowsWrap > .justifiedRow {
+    text-align: justify;
     width: 100%;
-    text-align: justify;
-    line-height: 1.3em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;
+    max-height: 1.5rem;
 }
-*/
-/* #Intro .justifiedRow {
-    text-align: justify;
-} */
+#Intro .justifiedRowsWrap > .justifiedRow:after {
+    /* used to stretch word */
+    content: "";
+    width: 100%;
+    display: inline-block;
+    height: 0px;
+    line-height: 0px;
+}
 
 #Intro h3 {
     font-size: 2em;
     max-width: 80%;
     font-weight: 300;
 }
-#Intro p {
+#Intro .justifiedRowsWrap > .justifiedRow {
     font-size: 1.3em;
 }
-#Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+/* #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
     word-spacing: 0.21rem;
 }
 #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
@@ -184,7 +160,7 @@
 }
 #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
     word-spacing: 0.27rem;
-}
+} */
 
 /* CLIENTS */
 #Clients {
@@ -330,23 +306,8 @@
         height: 360px;
         width: 360px;
     }
-    /* #Intro p {
+    /* #Intro .justifiedRowsWrap > .justifiedRow {
         font-size: 2.2em;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
-        word-spacing: 0.36rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
-        word-spacing: 1.37rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
-        word-spacing: 1.07rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
-        word-spacing: 1.78rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
-        word-spacing: 0.47rem;
     } */
 }
 @media screen and (max-height: 1200px) {
@@ -459,23 +420,8 @@
     /* #Intro h3 {
         font-size: 2em;
     } */
-    #Intro p {
+    #Intro .justifiedRowsWrap > .justifiedRow {
         font-size: 1.2em;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
-        word-spacing: 0.2rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
-        word-spacing: 0.74rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
-        word-spacing: 0.59rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
-        word-spacing: 1rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
-        word-spacing: 0.26rem;
     }
 
     #Clients h4 {
@@ -503,9 +449,11 @@
         padding: 6rem 2rem 6rem 2rem;
     }
     #Clients {
-        min-height: auto;
-        margin-bottom: 10rem;
+        min-height: 100vh;
+        margin-bottom: 0;
+        margin-top: 0;
         padding: 4rem;
+        justify-content: start;
     }
     #Book {
         padding: 6rem 4rem 6rem 4rem;
@@ -513,7 +461,8 @@
     #Contact {
         /* margin-top: 33vh; */
         height: auto;
-        padding-bottom: 3rem;
+        padding-bottom: 0;
+        align-items: flex-end;
     }
     #Contact > .wrap {
         /* align-items: flex-start; */
@@ -522,40 +471,58 @@
     }
     .contactWrap {
         flex-direction: column;
-    }
-    #Contact h6 {
-        font-size: 2.5em;
-        /* text-align: center;
-        width: 100%; */
-    }
-    #Contact .address {
+        margin-bottom: 0rem;
         width: auto;
     }
+    #Contact h6 {
+        font-size: 2em;
+        /* text-align: center;
+        width: 100%; */
+        margin: 2rem 0;
+    }
+    #Contact .address {
+        /* width: 100%; */
+        width: 200px;
+        margin-bottom: 1.75rem;
+    }
+    #Contact > .wrap > .address:last-child {
+        margin-bottom: 0;
+    }
+
     #Contact .address > div {
         margin-left: 0;
     }
+    #Contact > .wrap > .address:last-child * {
+        justify-content: flex-start;
+    }
     #Contact .address p {
-        font-size: 0.95em;
-        line-height: 2.2rem;
+        font-size: 0.85em;
+        line-height: 1.8rem;
         white-space: nowrap;
         /* overflow: hidden; */
         text-overflow: clip;
     }
+    #Contact .address > p:nth-child(1) {
+        font-size: 0.85rem;
+    }
     .phone svg {
-        height: 15px;
+        height: 12px;
         width: 20px;
     }
     .email svg {
-        height: 13px;
+        height: 10px;
         width: 20px;
+    }
+    .copyrights {
+        margin-top: 0.75rem;
     }
 }
 
 @media screen and (max-width: 680px) {
-    #Intro p {
+    #Intro .justifiedRowsWrap > .justifiedRow {
         font-size: 1em;
     }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+    /* #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
         word-spacing: 0.16rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
@@ -569,7 +536,7 @@
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
         word-spacing: 0.22rem;
-    }
+    } */
 }
 @media screen and (max-width: 580px) {
     #Home {
@@ -590,10 +557,10 @@
     .poweredBy {
         font-size: 0.9em;
     }
-    #Intro p {
+    #Intro .justifiedRowsWrap > .justifiedRow {
         font-size: 0.8em;
     }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
+    /* #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
         word-spacing: 0.125rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
@@ -607,7 +574,7 @@
     }
     #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
         word-spacing: 0.18rem;
-    }
+    } */
 }
 
 @media screen and (max-width: 510px) {
@@ -654,23 +621,8 @@
     #Intro {
         padding: 2rem 1rem;
     }
-    #Intro p {
+    #Intro .justifiedRowsWrap > .justifiedRow {
         font-size: 0.7em;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
-        word-spacing: 0.12rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
-        word-spacing: 0.43rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
-        word-spacing: 0.34rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
-        word-spacing: 0.58rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
-        word-spacing: 0.15rem;
     }
 }
 
@@ -693,23 +645,11 @@
     #Home {
         padding: 2rem 1rem;
     }
-    #Intro p {
+    #Intro .justifiedRowsWrap {
+        width: 260px;
+    }
+    #Intro .justifiedRowsWrap > .justifiedRow {
         font-size: 0.6em;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
-        word-spacing: 0.095rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
-        word-spacing: 0.37rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
-        word-spacing: 0.3rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
-        word-spacing: 0.505rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
-        word-spacing: 0.12rem;
     }
 }
 

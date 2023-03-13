@@ -14,10 +14,10 @@ export default function Slider({ renderAnimationB }) {
             src: "",
             alt: "",
         },
-        // {
-        //     src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1676559351/GINGIO%20-%20The%20Poyel%20Angels/IMG_6298_lqjcvt.jpg",
-        //     alt: "Third slider picture",
-        // },
+        {
+            src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1678692340/GINGIO%20-%20The%20Poyel%20Angels/office-optimize_dhm9ah.jpg",
+            alt: "Third slider picture",
+        },
         {
             src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1676559354/GINGIO%20-%20The%20Poyel%20Angels/IMG_6296_j95v8r.jpg",
             alt: "First slider picture",
@@ -107,6 +107,14 @@ export default function Slider({ renderAnimationB }) {
                                 background: "transparent",
                             }}
                         >
+                            {/* <Image
+                                src={img.src}
+                                alt={img.alt}
+                                fill
+                                style={{
+                                    objectFit: "cover",
+                                }}
+                            /> */}
                             <h2 style={renderAnimationB}>
                                 THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S
                                 COMMUNITY!
