@@ -22,8 +22,8 @@
 .fake-slide {
     padding: 3rem 2rem 2rem 2rem;
     display: flex;
-    align-items: flex-end;
-    /* align-items: center; */
+    /* align-items: flex-end; */
+    align-items: flex-start;
     /* justify-content: center; */
 }
 
@@ -35,6 +35,7 @@
     max-width: 300px;
     transition: 0.5s ease;
     transition-delay: 0.7s;
+    margin-top: 50px;
 }
 
 /* HOME */
@@ -67,10 +68,10 @@
     text-overflow: clip;
 }
 .headingsWrap h1,
-.headingsWrap h2 {
+.fake-slide h2 {
     transition: 0.5s ease;
 }
-.headingsWrap h2 {
+.fake-slide h2 {
     line-height: 1.2em;
     font-size: 1.8em;
     transition-delay: 0.7s;
@@ -80,7 +81,7 @@
     display: flex;
     align-items: center;
 }
-.headingsWrap h2,
+.fake-slide h2,
 .poweredBy {
     font-weight: 100;
     font-family: "Montserrat";
@@ -104,4 +105,91 @@
 }
 .poweredBy > a {
     margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 1700px) {
+    .headingsWrap h1 {
+        font-size: 2em;
+        /* margin-bottom: 2rem; */
+        /* max-width: 350px; */
+    }
+    .fake-slide h2 {
+        font-size: 1.7em;
+        margin-bottom: 2rem;
+        max-width: 280px;
+    }
+}
+@media screen and (max-height: 950px) {
+    .headingsWrap h1,
+    .fake-slide h2 {
+        font-size: 2.5em;
+        /* margin-bottom: 4rem; */
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .headingsWrap h1 {
+        font-size: 2em;
+        /* margin-bottom: 2rem; */
+    }
+    .fake-slide h2 {
+        font-size: 1.6em;
+        margin-bottom: 2rem;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .circleBox {
+        /* height: 360px;
+        width: 360px; */
+        margin-bottom: 1rem;
+    }
+    .headingsWrap {
+        width: 580px;
+    }
+    .headingsWrap > h1 {
+        /* font-size: 2.8em; */
+        white-space: normal;
+    }
+    /* .fake-slide h2 {
+        font-size: 2.4em;
+    } */
+}
+
+@media screen and (max-width: 580px) {
+    .headingsWrap {
+        width: 380px;
+    }
+    .headingsWrap h1 {
+        font-size: 2.5em;
+        white-space: normal;
+    }
+    .fake-slide > h2 {
+        font-size: 1.7em;
+        margin-bottom: 2.2rem;
+        max-width: 220px;
+    }
+    .poweredBy {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .headingsWrap {
+        width: 100%;
+    }
+    .headingsWrap h1 {
+        font-size: 1.5em;
+    }
+
+    .fake-slide h2 {
+        font-size: 1.4em;
+        margin-bottom: 2.2rem;
+        /* font-weight: 500; */
+    }
+    .poweredBy {
+        font-size: 0.8em;
+        font-weight: 500;
+    }
 }
