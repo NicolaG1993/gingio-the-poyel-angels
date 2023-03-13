@@ -86,7 +86,12 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
         <>
             <Head>
                 <title>The Poyel Angels</title>
-                <link rel="icon" href="/favicon.ico" />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:title"
+                    content="The Poyel Angels
+                    community!"
+                />
             </Head>
 
             <main className={styles.main}>

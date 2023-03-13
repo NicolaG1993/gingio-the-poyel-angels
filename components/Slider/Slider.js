@@ -157,13 +157,13 @@ export default function Slider({
                 </div> */}
             </div>
 
-            <div
-                className={styles.content}
-                style={{
-                    color: Number(activeSlide) === 0 ? "black" : "white",
-                }}
-            >
-                <div className={styles.headingsWrap}>
+            <div className={styles.content}>
+                <div
+                    className={styles.headingsWrap}
+                    style={{
+                        color: Number(activeSlide) === 0 ? "black" : "white",
+                    }}
+                >
                     <Link href={"/"}>
                         <h1 style={renderAnimationA}>THE POYEL ANGELS</h1>
                     </Link>

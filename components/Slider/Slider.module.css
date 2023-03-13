@@ -22,9 +22,9 @@
 .fake-slide {
     padding: 3rem 2rem 2rem 2rem;
     display: flex;
-    /* align-items: flex-end; */
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .fake-slide h2 {

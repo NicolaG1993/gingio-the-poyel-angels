@@ -77,15 +77,15 @@ export default function Layout({ children, ...pageProps }) {
             <Head>
                 <meta
                     name="keywords"
-                    content="FMC, Free, Music, Consultant, DJ, International, Live, Events, Entertainment, Musicians, Services, Management"
+                    content="Female, DJ, Community, Free, Music, Consultant, International, Live, Events, Entertainment, Musicians, Services, Management"
                 />
                 <meta
                     name="description"
-                    content="FMC • FREE First Class Music Consultant"
+                    content="The global concierge for the female DJ’s"
                 />
                 <meta
                     property="og:description"
-                    content="FMC • FREE First Class Music Consultant"
+                    content="The global concierge for the female DJ’s"
                 />
 
                 <meta property="og:url" content="https://www.fmc.com" />
@@ -114,7 +114,7 @@ export default function Layout({ children, ...pageProps }) {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 />
-                <meta name="author" content="NGD - Nicola Gaioni Design" />
+                <meta name="author" content="NGD • Nicola Gaioni Design" />
                 <meta charSet="UTF-8" />
             </Head>
 

@@ -123,18 +123,20 @@
     align-items: center;
     justify-content: center;
     font-family: "Montserrat";
-    padding-top: 4rem;
+    padding-top: 0rem;
     padding-bottom: 0;
     min-height: 0;
-    height: 96vh;
+    height: 100vh;
 }
 #Contact > .wrap {
     width: 100%;
     max-width: 800px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .contactWrap {
@@ -143,7 +145,7 @@
     display: flex;
     justify-content: space-between;
     /* margin-top: 4rem; */
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 #Contact .headline {
@@ -192,6 +194,7 @@
     display: flex;
     justify-content: center;
     width: auto;
+    /* margin-bottom: auto; */
 }
 #Contact #FinalAddress svg {
     /* margin: 0; */
@@ -236,6 +239,9 @@
     height: 4vh;
     margin-top: 2rem;
     font-family: "Montserrat";
+    justify-self: flex-end;
+    position: absolute;
+    bottom: 0;
 }
 
 /* RESPONSIVENESS */
