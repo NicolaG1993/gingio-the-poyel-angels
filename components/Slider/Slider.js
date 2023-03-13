@@ -97,6 +97,10 @@ export default function Slider({
                                 fill
                                 style={{
                                     objectFit: "cover",
+                                    objectPosition:
+                                        Number(activeSlide) === 2
+                                            ? "top"
+                                            : "center",
                                 }}
                             />
                         </div>
