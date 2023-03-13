@@ -629,10 +629,6 @@
         width: 220px;
     }
 
-    #Intro h3 {
-        font-size: 1.2em;
-        /* padding: 3rem; */
-    }
     #Book h5 {
         font-size: 1.8em;
     }
@@ -643,10 +639,10 @@
         padding: 2rem 1rem;
     }
     #Intro .justifiedRowsWrap {
-        width: 260px;
+        width: 100%;
     }
     #Intro .justifiedRowsWrap > .justifiedRow {
-        font-size: 0.6em;
+        font-size: 0.55em;
     }
 }
 
@@ -689,8 +685,5 @@
     .circleBox {
         height: 200px;
         width: 200px;
-    }
-    #Intro h3 {
-        font-size: 1em;
     }
 }
