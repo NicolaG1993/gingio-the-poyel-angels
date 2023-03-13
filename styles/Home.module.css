@@ -589,9 +589,6 @@
     #Intro > div:nth-child(2) {
         margin-top: 0;
     }
-    #Intro h3 {
-        font-size: 1.6em;
-    }
 
     #Book h5 {
         font-size: 2.3em;
@@ -622,7 +619,7 @@
         padding: 2rem 1rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow {
-        font-size: 0.7em;
+        font-size: 0.65em;
     }
 }
 
