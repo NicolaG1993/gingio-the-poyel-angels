@@ -18,7 +18,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 .slider::-webkit-scrollbar {
     display: none;
@@ -33,10 +33,10 @@
 
 @media screen and (max-width: 470px) {
     .slider {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
     .slide {
-        width: 250px;
+        width: 200px;
     }
 }

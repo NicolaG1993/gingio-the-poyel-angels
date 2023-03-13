@@ -460,14 +460,16 @@
     }
     #Contact {
         /* margin-top: 33vh; */
-        height: auto;
+        height: 100vh;
         padding-bottom: 0;
         align-items: flex-end;
     }
     #Contact > .wrap {
         /* align-items: flex-start; */
+        height: 100%;
         width: 100%;
         max-width: 250px;
+        justify-content: space-evenly;
     }
     .contactWrap {
         flex-direction: column;
@@ -496,8 +498,8 @@
         justify-content: flex-start;
     }
     #Contact .address p {
-        font-size: 0.85em;
-        line-height: 1.8rem;
+        font-size: 0.75em;
+        line-height: 1.75rem;
         white-space: nowrap;
         /* overflow: hidden; */
         text-overflow: clip;
@@ -514,7 +516,7 @@
         width: 20px;
     }
     .copyrights {
-        margin-top: 0.75rem;
+        margin-top: 1rem;
     }
 }
 
@@ -522,21 +524,6 @@
     #Intro .justifiedRowsWrap > .justifiedRow {
         font-size: 1em;
     }
-    /* #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
-        word-spacing: 0.16rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
-        word-spacing: 0.62rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
-        word-spacing: 0.5rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
-        word-spacing: 0.83rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
-        word-spacing: 0.22rem;
-    } */
 }
 @media screen and (max-width: 580px) {
     #Home {
