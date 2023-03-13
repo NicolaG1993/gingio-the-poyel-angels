@@ -38,7 +38,7 @@ export default function Slider({
     const [activeSlide, setActiveSlide] = useState(0);
     // const [content, setContent] = useState(slides[0]);
 
-    const autoPlay = 6;
+    const autoPlay = 10;
 
     const nextSlide = () => {
         setActiveSlide(activeSlide === slides.length - 1 ? 0 : activeSlide + 1);
