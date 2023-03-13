@@ -1,8 +1,15 @@
 import Image from "next/image";
 import styles from "./Slider.module.css";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import gingioLogo from "../../public/assets/gingio.png";
 
-export default function Slider({ renderAnimationB }) {
+export default function Slider({
+    renderAnimationA,
+    renderAnimationB,
+    renderAnimationC,
+    logoHeight,
+}) {
     /*
      * import and load all images
      * only after start render with fade in
@@ -10,10 +17,10 @@ export default function Slider({ renderAnimationB }) {
      */
 
     const slides = [
-        {
-            src: "",
-            alt: "",
-        },
+        // {
+        //     src: "",
+        //     alt: "",
+        // },
         {
             src: "https://res.cloudinary.com/dg4i4hspr/image/upload/v1678692340/GINGIO%20-%20The%20Poyel%20Angels/office-optimize_dhm9ah.jpg",
             alt: "Third slider picture",
@@ -105,16 +112,17 @@ export default function Slider({ renderAnimationB }) {
                                     Number(activeSlide) === Number(i) ? 1 : 0,
                                 transition: "opacity 0.5s ease-in-out",
                                 background: "transparent",
+                                color: "black",
                             }}
                         >
-                            {/* <Image
+                            <Image
                                 src={img.src}
                                 alt={img.alt}
                                 fill
                                 style={{
                                     objectFit: "cover",
                                 }}
-                            /> */}
+                            />
                             <h2 style={renderAnimationB}>
                                 THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S
                                 COMMUNITY!
@@ -143,6 +151,42 @@ export default function Slider({ renderAnimationB }) {
                         }}
                     />
                 </div> */}
+            </div>
+
+            <div
+                className={styles.content}
+                style={{
+                    color: Number(activeSlide) === 0 ? "black" : "white",
+                }}
+            >
+                <div className={styles.headingsWrap}>
+                    <Link href={"/"}>
+                        <h1 style={renderAnimationA}>THE POYEL ANGELS</h1>
+                    </Link>
+                    <div>
+                        {/* <h2 style={renderAnimationB}>
+                            THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S COMMUNITY!
+                        </h2> */}
+                    </div>
+                </div>
+                <div className={styles.poweredByWrap}>
+                    <span style={renderAnimationC} className={styles.poweredBy}>
+                        POWERED BY
+                        <a
+                            href="https://www.gingio.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                src={gingioLogo}
+                                width="auto"
+                                height={logoHeight}
+                                // height={"38"}
+                                alt="Gingio"
+                            />
+                        </a>
+                    </span>
+                </div>
             </div>
         </>
     );

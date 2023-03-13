@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
-import gingioLogo from "../public/assets/gingio.png";
+
 import Phone from "../public/assets/phone.svg";
 import Email from "../public/assets/email.svg";
 import Website from "../public/assets/website.svg";
@@ -91,44 +91,12 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
 
             <main className={styles.main}>
                 <section className={styles.section} id={styles.Home}>
-                    <Slider renderAnimationB={renderAnimationB} />
-
-                    <div className={styles.content}>
-                        <div className={styles.headingsWrap}>
-                            <Link href={"/"}>
-                                <h1 style={renderAnimationA}>
-                                    THE POYEL ANGELS
-                                </h1>
-                            </Link>
-                            <div>
-                                {/* <h2 style={renderAnimationB}>
-                                    THE GLOBAL CONCIERGE FOR THE FEMALE DJ’S
-                                    COMMUNITY!
-                                </h2> */}
-                            </div>
-                        </div>
-                        <div className={styles.poweredByWrap}>
-                            <span
-                                style={renderAnimationC}
-                                className={styles.poweredBy}
-                            >
-                                POWERED BY
-                                <a
-                                    href="https://www.gingio.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <Image
-                                        src={gingioLogo}
-                                        width="auto"
-                                        height={logoHeight}
-                                        // height={"38"}
-                                        alt="Gingio"
-                                    />
-                                </a>
-                            </span>
-                        </div>
-                    </div>
+                    <Slider
+                        renderAnimationA={renderAnimationA}
+                        renderAnimationB={renderAnimationB}
+                        renderAnimationC={renderAnimationC}
+                        logoHeight={logoHeight}
+                    />
                 </section>
 
                 <section className={styles.section} id={styles.Intro}>
@@ -279,13 +247,13 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                                 </a>
                             </div>
                         </div>
+
+                        <p className={styles.copyrights}>
+                            © Copyright {new Date().getFullYear()}
+                            {" | "}All Rights Reserved.
+                        </p>
                     </div>
                 </section>
-
-                <p className={styles.copyrights}>
-                    © Copyright {new Date().getFullYear()}
-                    {" | "}All Rights Reserved.
-                </p>
             </main>
         </>
     );

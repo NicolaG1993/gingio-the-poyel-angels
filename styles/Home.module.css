@@ -45,72 +45,6 @@
     align-items: stretch;
     padding: 3rem 2rem 2rem 2rem;
 }
-#Home > .content {
-    display: flex;
-    /* flex-direction: row-reverse; */
-    /* align-items: center; */
-    position: relative;
-    z-index: 2;
-    flex-grow: 1;
-    /* align-items: stretch; */
-}
-#Home .headingsWrap {
-    /* width: 66%; */
-    display: flex;
-    flex-direction: column;
-    /* flex-grow: 1; */
-    position: relative;
-}
-#Home .headingsWrap a {
-}
-#Home .headingsWrap h1 {
-    font-size: 2em;
-    line-height: 0.9em;
-    /* margin-bottom: 2rem; */
-    font-family: "Aquire Bold", sans-serif;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: clip;
-}
-#Home .headingsWrap h1,
-#Home .headingsWrap h2 {
-    transition: 0.5s ease;
-}
-#Home .headingsWrap h2 {
-    line-height: 1.2em;
-    font-size: 1.8em;
-    transition-delay: 0.7s;
-}
-#Home .headingsWrap > div:nth-child(2) {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-}
-#Home .headingsWrap h2,
-.poweredBy {
-    font-weight: 100;
-    font-family: "Montserrat";
-    max-width: 300px;
-}
-
-#Home .poweredByWrap {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.poweredBy {
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 0.7em;
-    line-height: 0.7em;
-    vertical-align: middle;
-    transition: 0.5s ease;
-    transition-delay: 1s;
-}
-.poweredBy > a {
-    margin-left: 0.5rem;
-}
 
 /* INTRO */
 #Intro {
@@ -139,7 +73,7 @@
 }
 
 #Intro h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     max-width: 80%;
     font-weight: 300;
 }
@@ -209,7 +143,7 @@
     display: flex;
     justify-content: space-between;
     /* margin-top: 4rem; */
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 #Contact .headline {
@@ -222,8 +156,8 @@
 #Contact h6 {
     font-size: 2em;
     font-weight: 400;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 #Contact .address {
@@ -244,15 +178,20 @@
     margin-left: 0;
 }
 #Contact .address p {
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: 200;
-    line-height: 1.8em;
+    line-height: 1.7em;
 }
 #Contact a:hover {
     text-decoration: underline;
 }
 #Contact .address > div {
     /* margin-left: 0.5rem; */
+}
+#Contact #FinalAddress {
+    display: flex;
+    justify-content: center;
+    width: auto;
 }
 #Contact #FinalAddress svg {
     /* margin: 0; */
@@ -359,14 +298,14 @@
         margin-bottom: 0;
     }
     #Intro h3 {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
     #Clients h4 {
         margin-bottom: 2rem;
     }
     #Contact h6 {
-        margin-top: 4rem;
-        margin-bottom: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -461,6 +400,7 @@
     #Contact {
         /* margin-top: 33vh; */
         height: 100vh;
+        padding-top: 1rem;
         padding-bottom: 0;
         align-items: flex-end;
     }
@@ -475,17 +415,22 @@
         flex-direction: column;
         margin-bottom: 0rem;
         width: auto;
+        /* align-self: flex-start; */
     }
     #Contact h6 {
-        font-size: 2em;
+        font-size: 1.25em;
         /* text-align: center;
         width: 100%; */
-        margin: 2rem 0;
+        margin: 2rem 0 1rem 0;
+        text-align: left;
+        /* align-self: flex-start; */
+        width: 200px;
     }
     #Contact .address {
         /* width: 100%; */
         width: 200px;
-        margin-bottom: 1.75rem;
+        margin-bottom: 1rem;
+        /* align-self: flex-start; */
     }
     #Contact > .wrap > .address:last-child {
         margin-bottom: 0;
@@ -506,6 +451,9 @@
     }
     #Contact .address > p:nth-child(1) {
         font-size: 0.85rem;
+    }
+    #Contact #FinalAddress {
+        width: 200px;
     }
     .phone svg {
         height: 12px;
