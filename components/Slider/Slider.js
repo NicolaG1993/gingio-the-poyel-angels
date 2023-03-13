@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./Slider.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import gingioLogo from "../../public/assets/gingio.png";
+import gingioLogo from "../../public/assets/GINGIO • Logo • White Bold.png";
 
 export default function Slider({
     renderAnimationA,
