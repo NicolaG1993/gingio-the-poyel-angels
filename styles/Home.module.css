@@ -58,7 +58,9 @@
     height: 100vh;
     padding: 4rem 4rem;
 }
-
+#Intro .justifiedRowsWrap {
+    margin-bottom: 5rem;
+}
 #Intro .justifiedRowsWrap > .justifiedRow {
     text-align: justify;
     width: 100%;
