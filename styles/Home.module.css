@@ -336,7 +336,7 @@
         height: 100%;
         width: 100%;
         max-width: 250px;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     #Contact .headline {
         font-size: 1.3em;
@@ -386,7 +386,7 @@
     }
     #Contact #FinalAddress {
         width: 200px;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
     .phone svg {
         height: 12px;
