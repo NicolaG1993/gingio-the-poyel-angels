@@ -10,7 +10,7 @@
 .circleBox {
     /* margin-top: 10rem; */
     /* margin-top: 2rem; */
-    margin-top: 10rem;
+    /* margin-bottom: -10rem; */
     height: 320px;
     width: 320px;
     /* margin-bottom: 180px; */
@@ -44,7 +44,7 @@
     /* align-items: center; */
     align-items: flex-start;
     align-items: stretch;
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem 3rem 2rem 3rem;
 }
 
 /* INTRO */
@@ -56,10 +56,10 @@
     font-family: "Montserrat";
     /* min-height: 120vh; */
     height: 100vh;
-    padding: 4rem 4rem;
+    padding: 14rem 4rem 0rem 4rem;
 }
 #Intro .justifiedRowsWrap {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 #Intro .justifiedRowsWrap > .justifiedRow {
     text-align: justify;
@@ -286,12 +286,6 @@
         /* margin-bottom: 1rem; */
     }
 
-    #Intro {
-        /* min-height: 140vh; */
-    }
-    /* #Intro h3 {
-        font-size: 2em;
-    } */
     #Intro .justifiedRowsWrap > .justifiedRow {
         font-size: 1.2em;
     }
@@ -344,6 +338,11 @@
         max-width: 250px;
         justify-content: space-evenly;
     }
+    #Contact .headline {
+        font-size: 1.3em;
+        text-align: left;
+        max-width: 200px;
+    }
     .contactWrap {
         flex-direction: column;
         margin-bottom: 0rem;
@@ -354,7 +353,7 @@
         font-size: 1.25em;
         /* text-align: center;
         width: 100%; */
-        margin: 2rem 0 1rem 0;
+        margin: 0rem 0 0rem 0;
         text-align: left;
         /* align-self: flex-start; */
         width: 200px;
@@ -377,7 +376,7 @@
     }
     #Contact .address p {
         font-size: 0.75em;
-        line-height: 1.75rem;
+        line-height: 1.5rem;
         white-space: nowrap;
         /* overflow: hidden; */
         text-overflow: clip;
@@ -409,25 +408,11 @@
 @media screen and (max-width: 580px) {
     #Home {
         flex-direction: row;
+        padding: 2rem 1rem 2rem 1rem;
     }
     #Intro .justifiedRowsWrap > .justifiedRow {
         font-size: 0.8em;
     }
-    /* #Intro .justifiedRowsWrap > .justifiedRow:nth-child(1) {
-        word-spacing: 0.125rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(3) {
-        word-spacing: 0.51rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(4) {
-        word-spacing: 0.41rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(5) {
-        word-spacing: 0.67rem;
-    }
-    #Intro .justifiedRowsWrap > .justifiedRow:nth-child(6) {
-        word-spacing: 0.18rem;
-    } */
 }
 
 @media screen and (max-width: 510px) {

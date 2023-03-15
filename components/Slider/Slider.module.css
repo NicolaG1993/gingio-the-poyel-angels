@@ -20,7 +20,7 @@
 }
 
 .fake-slide {
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 2rem 3rem 2rem 3rem;
     display: flex;
     /* align-items: flex-end; */
     align-items: flex-start;
@@ -30,7 +30,7 @@
 .fake-slide h2 {
     line-height: 1.2em;
     font-size: 1.8em;
-    font-weight: 200;
+    font-weight: 300;
     font-family: "Montserrat";
     max-width: 300px;
     transition: 0.5s ease;
@@ -84,7 +84,6 @@
 }
 .fake-slide h2,
 .poweredBy {
-    font-weight: 100;
     font-family: "Montserrat";
     max-width: 300px;
 }
@@ -165,6 +164,9 @@
     .headingsWrap h1 {
         font-size: 2.5em;
         white-space: normal;
+    }
+    .fake-slide {
+        padding: 2rem 1rem 2rem 1rem;
     }
     .fake-slide > h2 {
         font-size: 1.7em;
