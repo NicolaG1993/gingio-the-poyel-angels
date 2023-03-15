@@ -326,7 +326,7 @@
     }
     #Contact {
         /* margin-top: 33vh; */
-        height: 100vh;
+        height: 96vh;
         padding-top: 1rem;
         padding-bottom: 0;
         align-items: flex-end;
@@ -342,7 +342,7 @@
         font-size: 1.3em;
         text-align: left;
         max-width: 200px;
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
     .contactWrap {
         flex-direction: column;
@@ -377,7 +377,7 @@
     }
     #Contact .address p {
         font-size: 0.75em;
-        line-height: 1.5rem;
+        line-height: 1.4rem;
         white-space: nowrap;
         /* overflow: hidden; */
         text-overflow: clip;
