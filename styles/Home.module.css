@@ -342,6 +342,7 @@
         font-size: 1.3em;
         text-align: left;
         max-width: 200px;
+        margin-top: 30px;
     }
     .contactWrap {
         flex-direction: column;
@@ -386,7 +387,7 @@
     }
     #Contact #FinalAddress {
         width: 200px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
     .phone svg {
         height: 12px;
