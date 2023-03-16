@@ -175,7 +175,7 @@ export default function Slider({
                 </div>
                 <div className={styles.poweredByWrap}>
                     <span style={renderAnimationC} className={styles.poweredBy}>
-                        POWERED BY
+                        <p>POWERED BY</p>
                         <a
                             href="https://www.gingio.com"
                             target="_blank"

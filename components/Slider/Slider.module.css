@@ -92,13 +92,15 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    display: flex;
+    align-items: center;
 }
 .poweredBy {
     display: flex;
     align-items: center;
     font-weight: 400;
     font-size: 0.7em;
-    line-height: 0.7em;
+    line-height: 1.2em;
     vertical-align: middle;
     transition: 0.5s ease;
     transition-delay: 1s;
