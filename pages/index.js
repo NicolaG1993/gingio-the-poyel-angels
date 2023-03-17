@@ -254,7 +254,7 @@ export default function Home({ scrollTop, width, height, isSmallDevice }) {
                         </div>
 
                         <p className={styles.copyrights}>
-                            © Copyright {new Date().getFullYear()}
+                            © {new Date().getFullYear()} The Poyel Angels
                             {" | "}All Rights Reserved.
                         </p>
                     </div>
